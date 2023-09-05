@@ -1,0 +1,215 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; } 
+fieldset, img { border:none; } 
+img{display: block;} 
+address, caption, cite, code, dfn, th, var { font-style:normal; font-weight:normal; } 
+ul, ol { list-style:none; } 
+body { color:#333;font:12px/20px Verdana,simsun,sans-serif,"宋体","Arial Narrow",HELVETICA; background:#fff; overflow-y:scroll; overflow-x:hidden;}
+a { color:#666; text-decoration:none; }
+/*修改默认样式*/
+#header-wrap{width: 100%;background: #eeeeee;height: 32px;}
+#header{width: 1190px;height: 32px;margin: 0 auto;}
+.header-a{float: left;line-height: 50px}
+.header-a li{float: left;}
+.header-a li a{font: 12px/32px "黑体";font-family: Verdana, simsun, sans-serif;display: block;float: left;margin-left: 10px;padding-left: 27px;}
+.header-li1{background: url(../img/header-bg.png)no-repeat -225px 6px;}
+.header-li1:hover{color: #e5004f;background-position: -225px -21px;}
+.weixin{position: relative;width: 70px;height: 32px;}
+.header-li2{background: url(../img/header-bg.png)no-repeat -225px -51px;position: absolute;width:65px;height: 32px;}
+.header-li2:hover{color: #e5004f;background-position: -225px -81px;}
+.header-li3{background: url(../img/phone1.png)no-repeat 0 5px;padding-left:5px;}
+.header-li3:hover{color: #e5004f;background: url(../img/phone2.png)no-repeat 0 5px;}
+.header-b{float: right;padding-right: 12px;width: 490px;height: 32px;font: 12px/32px "黑体";font-family: Verdana, simsun, sans-serif;}
+.header-b li{float: left;}
+.header-b li a{display: block;float: left;padding-left: 6px;padding-right: 6px;}
+.header-b li a:hover{color: #e5004f;}
+#my-yintai{position: relative;margin-right: 15px;}
+
+
+#my-yintai1{position: absolute;top:32px;z-index: 5;background: #FFFFFF;border-bottom: 1px solid #ccc;width:80px;display: none;}
+#my-yintai1 a{border-bottom: 1px solid #CCCCCC;width: 80px;}
+#my-yintai1 a:hover{text-decoration: underline;}
+
+
+
+
+/*  上面是第一部分  */
+
+#logo-wrap{width: 100%;height: 121px;background: #FFFFFF;}
+#logo{width: 1190px;height: 102px;margin: 0 auto;padding-top: 19px;}
+.logo-pic{display: block;float: left;}
+#kong-a{width: 10px;height: 70px;border-right: 1px solid #efefef;float: left;margin-right: 10px;}
+#logo-pic1{width: 120px;height: 80px;float: left;margin-right: 150px;}
+#logo-pic1 a{display: block;float: left;width: 118px;height: 78px;background: url(../img/logo-pic2.jpg)no-repeat top left;}
+
+#logo-right{width: 676px;height: 80px;float: right;padding-top: 22px;}
+#search-box{width: 445px;height: 28px;border: 2px solid #323333;padding-left: 5px;float: left;}
+#search-btn{display: block;float: left;width:46px;height:34px;background: url(../img/search-btn.jpg)no-repeat center;margin-right: 15px;}
+#shopping-car{float: left;width: 112px;height: 34px;background: #323333 url(../img/shopping-car.jpg)no-repeat top left;padding-left: 48px;font:12px/34px '黑体';font-family: Verdana, simsun, sans-serif;color:#FFFFFF;}
+.search-bottom li{float: left;}
+.search-bottom li a{display: block;float: left;font: 12px/36px '黑体';font-family: Verdana, simsun, sans-serif;margin-left:6px ;margin-right: 6px;}
+.search-bottom li a:hover{color: #e5004f;text-decoration: underline;}
+#radio{width: 145px;height: 26px;float:right;overflow: hidden;margin-top:10px; background:url(../img/radio.jpg)no-repeat top left;padding-left: 20px;position:relative;}
+#search-kuayu{position: relative;}
+#search-kuayu-ul{position: absolute;z-index: 10;width: 450px;border:2px solid #000;top:32px;background: #fff;padding-top: 10px;display: none;}
+#search-kuayu-ul li .lia{display: block;height: 30px;line-height: 30px;padding-left: 5px;}
+#search-kuayu-ul li .lia:hover{background: #ccc;color: #E5004F;}
+
+#radio-lis{position: absolute;}
+#radio-lis li{height: 25px;}
+#radio a{display: block;width: 116px;height: 36px;font:12px/36px '黑体';font-family: Verdana, simsun, sans-serif;color:#e5004f;text-decoration: underline;}
+/*             上面是logo区                            */
+
+
+
+#nav-wrap{width: 100%;height: 40px;border-bottom: 1px solid #2d2e2e;}
+#nav{width: 1190px;height: 40px;margin: 0 auto;position: relative;}
+#nav .nav1{display: block;float: left;font: 18px/38px '黑体';font-family: Verdana, simsun, sans-serif;text-align: center;padding: 0 10px;margin:0 10px;color: #000;border-bottom: 2px solid #fff;}
+#nav .nav1:hover{border-bottom: 2px solid #E5004F;}
+#nav-all{display:block;width: 210px;height: 40px;float: left;background: #000;font: 18px/40px '黑体';text-align: center;color: #FFFFFF;margin-right: 20px;cursor: pointer;}
+
+/*        下面是商品总类  position */
+#all-goods{position: absolute;z-index:20;top: 40px;left: 0;width: 210px;height: 470px;background: #333;}
+#all-goods .all-goods-nav{width:192px;height: 19px;border-bottom: #515151 1px solid;padding:17px 0 10px 18px;position: relative;}
+#all-goods li .goods-li{display: block;height: 18px;width: 42px;padding-left: 24px;float: left;font: 16px/17px '黑体';color: #fff;}
+#all-goods li .all-goods-style{display:block;float: left;width:50px;height: 18px;font: 12px/18px '黑体';color: #fff;}
+#all-goods .goods-li-span{width: 20px;height: 18px;display: block;float: right;font: 12px/17px '黑体';font-family: Verdana, simsun, sans-serif;color: #fff;}
+#all-goods li .all-goods-style:hover{text-decoration: underline;}
+/*        上面是商品总类  position */
+
+/*         下面是名品类选项卡      position      */
+.all-goods-nav #goods-famous{position: absolute;top: 0px;left: 210px;width: 495px;height: 437px;display: none;}
+.all-goods-nav #goods-famous .famous-style{float: left;width: 297px;height:429px; padding:8px 20px 0 18px;background:#2b2b29;}
+.all-goods-nav #goods-famous .famous-barank{float: left;width: 146px;background:#080808;padding-top:12px;height: 425px;padding-left: 14px;}
+/*         上面是名品类选项卡      position      */
+
+/*      选项卡部分公用         */
+#all-goods .famous-style .haveborder{border-bottom: dashed 1px #666664;}
+#all-goods .famous-style .famous-style-li{padding-top: 12px;padding-bottom: 4px;}
+#all-goods .famous-style .famous-style-li a p{font: 14px/20px '黑体';font-family: Verdana, simsun, sans-serif;color:#FFFFFF;}
+#all-goods .famous-style .famous-style-li a span{font-size: 12px;line-height: 20px;color: #FFFFFF;font-family: Verdana, simsun, sans-serif;display: inline-block;margin-right: 6px;}
+#all-goods .famous-style li a:hover span{color: #c52257;}
+#all-goods .famous-style li a:hover p{color: #c52257;}
+#all-goods .barank{width: 130px;height: 29px;border-bottom: 1px dashed #6c6c6c;font-size: 12px;line-height: 28px;color: #FFFFFF;font-weight: 900;}
+#all-goods .barank-li{padding-top: 7px;}
+#all-goods .barank-li li a{font-size: 10px;line-height: 24px;color: #FFFFFF;font-family: Verdana, simsun, sans-serif;display: inline-block;margin-right:5px;}
+#all-goods .barank-li li a:hover{color: #c52257;}
+/*      选项卡部分公用                  */
+
+/*    下面是女装选项卡        class部分选项卡公用*/
+#women-cloth{position: absolute;top: -47px;left: 210px;width: 495px;height: 419px;display: none;}
+#women-cloth .famous-style{float: left;width: 297px;height:418px; padding:8px 20px 0 18px;background:#2b2b29;}
+#women-cloth .famous-barank{float: left;width: 146px;background:#080808;padding-top:12px;height: 414px;padding-left: 14px;}
+/*    上面是女装选项卡        class部分选项卡公用*/
+
+/*      下面是男装选项卡         class部分公用*/
+#men-cloth{position: absolute;top: -94px;left: 210px;width: 495px;height: 435px;display: none;}
+#men-cloth .famous-style{float: left;width: 297px;height:427px; padding:8px 20px 0 18px;background:#2b2b29;}
+#men-cloth .famous-barank{float: left;width: 146px;background:#080808;padding-top:12px;height: 423px;padding-left: 14px;}
+/*        上面是男装选项卡            */
+
+/*        下面是鞋靴选项卡         */
+#all-shoes{position: absolute;top: -141px;left: 210px;width: 495px;height: 409px;display: none;}
+#all-shoes .famous-style{float: left;width: 297px;height:401px; padding:8px 20px 0 18px;background:#2b2b29;}
+#all-shoes .famous-barank{float: left;width: 146px;background:#080808;padding-top:12px;height: 397px;padding-left: 14px;}
+/*           上面是鞋靴  选项卡        */
+
+/*      下面是美妆 all-beautiful美丽的   */
+#all-beautiful{position: absolute;top: -188px;left: 210px;width: 495px;height: 470px;display: none;}
+#all-beautiful .famous-style{float: left;width: 297px;height:462px; padding:8px 20px 0 18px;background:#2b2b29;}
+#all-beautiful .famous-barank{float: left;width: 146px;background:#080808;padding-top:12px;height: 456px;padding-left: 14px;}
+/*      上面是美妆 all-beautiful美丽的*/
+
+/*       下面是箱包部分all-case                           */
+#all-case{position: absolute;top: -235px;left: 210px;width: 495px;height: 434px;display: none;}
+#all-case .famous-style{float: left;width: 297px;height:426px; padding:8px 20px 0 18px;background:#2b2b29;}
+#all-case .famous-barank{float: left;width: 146px;background:#080808;padding-top:12px;height: 422px;padding-left: 14px;}
+
+/*       上面是箱包部分all-case                           */
+
+/*         下面是运动鞋服部分  all-sport   */
+#all-sport{position: absolute;top: -282px;left: 210px;width: 495px;height: 470px;display: none;}
+#all-sport .famous-style{float: left;width: 297px;height:462px; padding:8px 20px 0 18px;background:#2b2b29;}
+#all-sport .famous-barank{float: left;width: 146px;background:#080808;padding-top:12px;height: 458px;padding-left: 14px;}
+/*       上面是运动鞋服部分  all-sport       */
+
+/*         下面是配饰部分  all-gold   */
+#all-gold{position: absolute;top: -329px;left: 210px;width: 495px;height: 409px;display: none;}
+#all-gold .famous-style{float: left;width: 297px;height:401px; padding:8px 20px 0 18px;background:#2b2b29;}
+#all-gold .famous-barank{float: left;width: 146px;background:#080808;padding-top:12px;height: 397px;padding-left: 14px;}
+/*       上面是配饰部分  all-gold       */
+
+/*         下面是母婴部分  all-mom   */
+#all-mom{position: absolute;top: -376px;left: 210px;width: 495px;height: 441px;display: none;}
+#all-mom .famous-style{float: left;width: 297px;height:433px; padding:8px 20px 0 18px;background:#2b2b29;}
+#all-mom .famous-barank{float: left;width: 146px;background:#080808;padding-top:12px;height: 429px;padding-left: 14px;}
+/*       上面是母婴部分  all-mom       */
+
+/*         下面是内衣部分  all-inside   */
+#all-inside{position: absolute;top: -334px;left: 210px;width: 495px;height: 381px;display: none;}
+#all-inside .famous-style{float: left;width: 297px;height:373px; padding:8px 20px 0 18px;background:#2b2b29;}
+#all-inside .famous-barank{float: left;width: 146px;background:#080808;padding-top:12px;height: 369px;padding-left: 14px;}
+/*       上面是内衣部分  all-inside       */
+
+/*                    上面是     所有页面    共同  头部            */
+
+
+
+/*           内部包主要内容                      */
+#all-content-wrap{width: 100%;background: #fff;}
+#all-content{width: 1190px;margin: 0 auto;min-height: 500px;height: auto !important;height: 500px;background: #FFFFFF;}
+/*           内部包主要内容                      */
+
+
+/*              下面是公用   的  footer       */
+#footer-wrap{width: 100%;height: 345px;}
+#footer{width: 1190px;height: 291px;margin: 0 auto;padding-top: 54px;}
+
+#after-sale{width: 1190px;height: 90px;float: left;}
+#after-sale .phone{width: 257px;height: 61px;padding-left: 70px;padding-top: 27px;float: left;border: 1px solid #dddddd;}
+#after-sale .sale-a{width: 186px;height: 61px;float: left;border: 1px solid #dddddd;border-left: 0;padding-left: 100px;padding-top: 27px;}
+.phone .phone-num{font-size: 16px;line-height: 16px;color:#e5004f;display: inline-block;margin-right: 10px;}
+.phone .phone-time{font-size: 10px;line-height: 14px;color: #666;}
+.phone .phone-email{font-size: 10px;line-height: 36px;color: #a38895;}
+.sale-a p{font-size: 16px;line-height: 18px;color: #000;}
+.sale-a .sale-b{font-size: 12px;line-height: 26px;color: #888;}
+
+#about-us{width: 1190px;text-align: center;height: 42px;float: left;padding-top: 38px;}
+#about-us a{font-size: 10px;color: #757575;font-family: Verdana, simsun, sans-serif;}
+#about-us a:hover{color: #e5004f;}
+
+#yintai-id{width: 1190px;height: 57px;float: left;text-align: center;}
+#yintai-id p{color: #b2b2b2;line-height: 22px;}
+
+#footer-end{width: 754px;height: 64px;padding-left: 436px;float: left;}
+#footer-end .end1{display: inline-block;width: 110px;height: 38px;border: 1px solid #fd830c;margin-right: 28px;border-radius: 3px;}
+#footer-end .end2{display: inline-block;width: 100px;height: 38px;border: 1px solid #fd830c;margin-right: 28px;border-radius: 3px;}
+#footer-end .end3{display: inline-block;}
+/*       上面是公用   的  footer*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   

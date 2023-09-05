@@ -1,0 +1,436 @@
+{% extends 'base.html' %}
+{% block title %}商品详情{% endblock %}
+{% block floor-navs %}{% endblock %}
+{% block banner %}{% endblock %}
+{% block induction %}
+	<link rel="stylesheet" href="/static/css/header-footer.css" />
+	<link rel="stylesheet" href="/static/css/index.css" />
+	<link rel="stylesheet" href="/static/css/iconfont.css" />
+	<link rel="stylesheet" href="/static/css/goods-show.css" />
+	<script type="text/javascript" src="/static/js/jquery-1.12.4.min.js" ></script>
+	<script type="text/javascript" src="/static/js/index.js" ></script>
+	<script type="text/javascript" src="/static/js/goods-show.js" ></script>
+
+{% endblock %}
+{% block wrap-left %}
+		<div id="nav-wrap">
+			<div id="nav">
+				<div id="nav-all">全部分类</div>
+				<a class='nav1' href="javascript:;">银泰百货</a>
+				<a class='nav1' href="javascript:;">名品馆</a>
+				<a class='nav1' href="#">特卖</a>
+				<a class='nav1' href="javascript:;">海淘馆</a>
+			</div>
+		</div>
+{% endblock %}
+{% block content %}
+		<!--主要内容区-->
+		<div id="all-content-wrap">
+			<div id="all-content">
+				<div id="goods-show-name">
+					<a href="/">首页</a>
+					<span>></span>
+					<a href="javascript:;">女装</a>
+					<span>></span>
+					<a href="javascript:;">裙装</a>
+					<span>></span>
+					<a href="javascript:;">{{goods.goodsType.name}}</a>
+					<span>></span>
+					<a href="javascript:;">{{store.name}}</a>
+					<span>></span>
+					<a href="javascript:;">{{goods.name}}</a>
+				</div>
+
+				<div id="goods-show">
+					<div id="set-big">
+						<div id="middle-pic">
+							<img src="/{{goods.goodsimage_set.all.first.path}}" >
+							<div id="jingpian"></div>
+						</div>
+						<ul id="small-pics">
+							<li style="float: left;">&lt;</li>
+							<a href="javascript:;" class="small-pics1">
+								<img src="/{{goods.goodsimage_set.all.first.path}}">
+							</a>
+							<a href="javascript:;"><img src="/{{goods.goodsimage_set.all.first.path}}"></a>
+							<a href="javascript:;"><img src="/{{goods.goodsimage_set.all.first.path}}"></a>
+							<li style="float: right;">&gt;</li>
+						</ul>
+						<div id="big-pic">
+							<img src="/{{goods.goodsimage_set.all.first.path}}" style="width: 800px;height: 980px">
+						</div>
+						<div id="goods-num">
+							<span style="float: left;">商品编号:{{goods.id}}</span>
+							<a style="float: left;" href="javascript:;">收藏</a>
+							<div class="weixin">
+								<img src="/static/img/goods-num-weix.jpg"/>
+								<div class="weixin-er">
+									<img src="/static/img/show-weixin-er.jpg">
+								</div>
+							</div>
+							<div class="show-links">
+								<img src="/static/img/show-xin.jpg"/>
+								<div class="show-links-er">
+									<img src="/static/img/show-xin-er.jpg">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="goods-show-con">
+						<div class="spans1">
+							{{goods.name}}
+						</div>
+						<div class="spans2">
+							<span style="color:#999;line-height: 30px;">直减价：</span>
+							<span style="color:#e5004f;font-size:18px;line-height:20px;">￥</span>
+							<span style="color:#e5004f;font-size:18px;line-height:20px;">{{goods.price}}
+							</span>
+							<span style="color:#e5004f;">.00</span>
+							<span class="spans-con">8.0折</span>
+						</div>
+						<div class="spans3">
+							银泰价：
+							<span>￥199.00</span>
+						</div>
+						<span>库存:{{goods.stock}} &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 销量:{{goods.count}} </span>
+						<div class="spans4">
+							<div class="spans4-con">直降
+								<img class='sss' src="/static/img/show-con-spans4.jpg">
+							</div>
+							<span>活动时间：9月6日 8:00~12月31日 10:00 </span><br>
+							<span>上架时间:{{goods.createTime}} </span>
+						</div>
+						<div class="spans5">
+							<span style="display: inline-block;margin-right:35px;">选择颜色</span>
+							<div class="spans5-con">
+								粉红
+								<div class="duihao"><img src="/{{goods.goodsimage_set.all.first.path}}" style="width: 50px;height: 35px"></div>
+							</div>
+						</div>
+						<div class="spans6">
+							<span style="display: inline-block;margin-right:35px;">选择尺码</span>
+							<a href="javascript:;">S</a>
+							<a href="javascript:;">M</a>
+							<a href="javascript:;">L</a>
+							<a href="javascript:;">XL</a>
+							<a href="javascript:;">XXL</a>
+						</div>
+						<div class="spans7" style="display: inline-block">
+							<input type="number" id="count" value="1" style="width: 50px;height: 30px;float: left" min="1">
+							<div style="float: left;margin-left: 60px">
+								<button class="addgods" goods_id="{{goods.id}}" style="width: 150px;height: 42px;background-color: pink;font-size: 16px">加入购物车</button>
+							</div>
+							<div style="float: right;">
+							<a href="javascript:;" class="right-buy"></a>
+							</div>
+
+
+						</div>
+						<div class="spans8">
+							商品描述:{{goods.desc}}
+						</div>
+					</div>
+					<div id="goods-show-right">
+						<div class="goods-show-right1">
+							<a href="javascript:;"><img src="/{{store.cover}}" style="width: 175px;height: 140px;margin-left: -38px;margin-top: -35px">
+							<span>店铺:{{store.name}}</span></a>
+						</div>
+					</div>
+				</div>
+
+				<div id="goods-details-wrap">
+					<div id="goods-details">
+						<div class="span span1">商品详情</div>
+						<div class="span">商品累计评价({{goods.commentCount}})</div>
+						<div class="span">商品咨询</div>
+						<div class="span">购买须知</div>
+						<div id="phone-shopping">
+							<a href="javascript:;"></a>
+							<div class="phone-shopping1">
+								<img src="/static/img/phone-shopping-er.jpg">
+							</div>
+						</div>
+						<div id="join-shoppingcar2">
+							<a href="javascript:;"></a>
+							<div class="join-shoppingcar21">
+								<img src="/static/img/join-shopping-er.jpg">
+							</div>
+						</div>
+					</div>
+					<div id="goods-too">
+						<span>人气推荐</span>
+						<a href="javascript:;">换一批</a>
+					</div>
+				</div>
+				<!--details详情的意思    商品详情-->
+				<div id="goods-details-pics">
+					<div id="details-pics-left">
+						<ul class="details-pics-left-block">
+							<img src="/static/img/goods-details-pic.jpg">
+						</ul>
+						<ul style="display: none;">
+							<img src="/static/img/goods-details-pic2.jpg">
+						</ul>
+						<ul class="details-form" style="display: none;">
+							<li><img src="/static/img/details-form-pic.jpg"></li>
+							<li class="details-form1">
+								<select class="form-select"/>
+									<option>全部咨询</option>
+								</select>
+								<sapn style='display: inline-block;float: right;'>
+									温馨提示:商品咨询及恢复具有时效性，相关问答信息仅供参考。
+								</sapn>
+							</li>
+							<li style="line-height:80px;padding-left: 30px;">
+								暂无此款商品咨询信息
+							</li>
+							<li class="details-form2">
+								<p class="form-tishi1">请选择咨询类型</p>
+								<p class="form-tishi2">咨询内容不能少于5字符</p>
+								<span style="display: inline-block;width:60px;margin-bottom: 15px;">请选择：</span>
+								<select class="form-select2" name="form-select2"/>
+									<option value=0>请选择</option>
+									<option value=1>商品尺码</option>
+									<option value=2>商品材质</option>
+									<option value=3>商品颜色</option>
+									<option value=4>商品包装</option>
+								</select>
+								<span style="color: red;display: inline-block;width: 280px;">*必选</span>
+								<span style="display:block;width:60px;float: left;">内容：</span>
+								<textarea class="textarea"></textarea>
+								<span style="color: red;display: inline-block;">*必填</span>
+								<p style="padding-left: 60px;">温馨提示：</p>
+								<p style="padding-left: 60px;">
+									1、您可以登录用户中心点击[我的咨询]查看客服回复；
+								</p>
+								<p style="padding-left: 60px;">
+									2、咨询回复工作时间：每天9:00至18:00，在1-2个工作日内完成回复。
+								</p>
+								<a class='form-btn1' href="javascript:;">
+									<img src="/static/img/form-btn1.jpg">
+								</a>
+							</li>
+						</ul>
+						<ul style="display: none;"><img src="/static/img/details-pic-end.jpg"></ul>
+					</div>
+					<div id="details-pics-right">
+						<ul class="details-pics-right1">
+							<li>
+								<img src="/static/img/details-right-1.jpg">
+								<p>
+									<a href="javascript:;">
+										缔五季7732 秋季新品韩国<br>时尚气质优雅女装针织打底
+									</a>
+								</p>
+								<b>￥219</b>
+								<span>￥719</span>
+							</li>
+							<li>
+								<img src="/static/img/details-right-1.jpg">
+								<p>
+									<a href="javascript:;">
+										缔五季7732 秋季新品韩国<br>时尚气质优雅女装针织打底
+									</a>
+								</p>
+								<b>￥219</b>
+								<span>￥719</span>
+							</li>
+							<li>
+								<img src="/static/img/details-right-1.jpg">
+								<p>
+									<a href="javascript:;">
+										缔五季7732 秋季新品韩国<br>时尚气质优雅女装针织打底
+									</a>
+								</p>
+								<b>￥219</b>
+								<span>￥719</span>
+							</li>
+							<li>
+								<img src="/static/img/details-right-1.jpg">
+								<p>
+									<a href="javascript:;">
+										缔五季7732 秋季新品韩国<br>时尚气质优雅女装针织打底
+									</a>
+								</p>
+								<b>￥219</b>
+								<span>￥719</span>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<img src="/static/img/details-right-2.jpg">
+								<p>
+									<a href="javascript:;">
+										缔五季7732 秋季新品韩国<br>时尚气质优雅女装针织打底
+									</a>
+								</p>
+								<b>￥219</b>
+								<span>￥719</span>
+							</li>
+							<li>
+								<img src="/static/img/details-right-2.jpg">
+								<p>
+									<a href="javascript:;">
+										缔五季7732 秋季新品韩国<br>时尚气质优雅女装针织打底
+									</a>
+								</p>
+								<b>￥219</b>
+								<span>￥719</span>
+							</li>
+							<li>
+								<img src="/static/img/details-right-2.jpg">
+								<p>
+									<a href="javascript:;">
+										缔五季7732 秋季新品韩国<br>时尚气质优雅女装针织打底
+									</a>
+								</p>
+								<b>￥219</b>
+								<span>￥719</span>
+							</li>
+							<li>
+								<img src="/static/img/details-right-2.jpg">
+								<p>
+									<a href="javascript:;">
+										缔五季7732 秋季新品韩国<br>时尚气质优雅女装针织打底
+									</a>
+								</p>
+								<b>￥219</b>
+								<span>￥719</span>
+							</li>
+
+						</ul>
+						<ul>
+							<li>
+								<img src="/static/img/details-right-3.jpg">
+								<p>
+									<a href="javascript:;">
+										缔五季7732 秋季新品韩国<br>时尚气质优雅女装针织打底
+									</a>
+								</p>
+								<b>￥219</b>
+								<span>￥719</span>
+							</li>
+							<li>
+								<img src="/static/img/details-right-3.jpg">
+								<p>
+									<a href="javascript:;">
+										缔五季7732 秋季新品韩国<br>时尚气质优雅女装针织打底
+									</a>
+								</p>
+								<b>￥219</b>
+								<span>￥719</span>
+							</li>
+							<li>
+								<img src="/static/img/details-right-3.jpg">
+								<p>
+									<a href="javascript:;">
+										缔五季7732 秋季新品韩国<br>时尚气质优雅女装针织打底
+									</a>
+								</p>
+								<b>￥219</b>
+								<span>￥719</span>
+							</li>
+							<li>
+								<img src="/static/img/details-right-3.jpg">
+								<p>
+									<a href="javascript:;">
+										缔五季7732 秋季新品韩国<br>时尚气质优雅女装针织打底
+									</a>
+								</p>
+								<b>￥219</b>
+								<span>￥719</span>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+{% endblock %}
+{% block ajax %}
+		<!--上面是公用   的  footer-->
+		<script>
+            $(function () {
+                $('.addgods').click(function () {
+                    var $goods_id = $(this).attr('goods_id');
+                    var $number = $('#count').val();
+                    $.ajax({
+                        url: "/shopcar/" + $number + "/" + $goods_id + "/shop_into/",
+                        type: 'get',
+                        success: function (msg) {
+
+                        },
+                        error: function (info) {
+                            alert('添加失败,请重新添加')
+                        }
+                    })
+                })
+
+            });
+
+
+
+
+			//关于搜索跨域
+	var searchKuayu     =document.getElementById('search-kuayu');//获取跨域表单
+	var searchBox		=document.getElementById('search-box');//获取input输入框
+	var searchBtn       =document.getElementById('search-btn');//获取input搜索框按钮
+	var searchKuaUl     =document.getElementById('search-kuayu-ul');//获取获得数据内容
+	//表单监听事件，
+	searchKuayu.oninput=searchKuayu.onpropertychange=function(){
+		var tet1=searchBox.value;
+		if (tet1!= "") {
+			var oScript=document.createElement('script');
+			oScript.src='http://www.yintai.com/ajaxpage/autosearch.aspx?keyword='
+			+tet1+
+			'&callback=callback';
+			document.body.appendChild(oScript);
+			document.body.removeChild(oScript);
+		}else{
+			searchKuaUl.innerHTML='';//若输入为空则下面uls为空
+			searchKuaUl.style.display='none';
+		}
+	}
+	//回调函数
+	function callback(odata){
+		console.log(odata);
+		searchKuaUl.innerHTML='';
+		searchKuaUl.style.display='block';
+		//建立li，
+		if(odata.length==0){
+			searchKuaUl.style.display='none';
+		}else{
+			for(var i=0;i<odata.length;i++){
+				var lis=document.createElement('li');
+				var lia=document.createElement('a');
+				lia.className='lia';
+				var text1=document.createTextNode(odata[i].keyword);
+				lia.appendChild(text1);
+				lis.appendChild(lia);
+				searchKuaUl.appendChild(lis);
+			}
+		}
+	}
+	//添加点击事件 li内容推入输入框并搜索
+	searchKuaUl.onclick=function(eve){  //属于委托事件
+		var e=window.event||eve;
+		var tar=e.target||e.srcElement;
+		if (tar.tagName.toLowerCase()=='a') {
+			searchBox.value=tar.innerHTML;
+			searchKuaUl.innerHTML='';
+			searchKuaUl.style.display='none';
+			var text=searchBox.value;
+			window.open('http://www.yintai.com/product/search.aspx?keyword='+text,'_blank');
+		}
+	};
+	searchBtn.onclick=function(){   //添加按钮搜索
+		var text2=searchBox.value;
+		if (text2!='') {
+			window.open('http://www.yintai.com/product/search.aspx?keyword='+text2,'_blank');
+			searchKuaUl.style.display='none';
+		}
+	};
+
+		</script>
+{% endblock %}

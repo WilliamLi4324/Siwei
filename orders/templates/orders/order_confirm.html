@@ -1,0 +1,163 @@
+{% extends 'base.html' %}
+{% block title %}确认订单信息{% endblock %}
+{% block floor-navs %}{% endblock %}
+{% block banner %}{% endblock %}
+{% block induction %}
+<style type="text/css">
+			 div {
+            position: relative;
+            line-height: 30px;
+        }
+
+        input[type="radio"] {
+            width: 20px;
+            height: 20px;
+            opacity: 0;
+        }
+
+        label {
+            position: absolute;
+            left: 200px;
+            top: 75px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 1px solid #999;
+　　　　　　cursor: pointer;
+        }
+
+        /*设置选中的input的样式*/
+        /* + 是兄弟选择器,获取选中后的label元素*/
+        input:checked+label {
+            background-color: #fe6d32;
+            border: 1px solid #fe6d32;
+        }
+         /*添加的加号与label进行拼接(一个矩形边框去掉上和左的边框),再旋转45度*/
+        input:checked+label::after {
+            position: absolute;
+            content: "";
+            width: 5px;
+            height: 10px;
+            top: 3px;
+            left: 6px;
+            border: 2px solid #fff;
+            border-top: none;
+            border-left: none;
+            transform: rotate(45deg);}
+		</style>
+	<link rel="stylesheet" href="/static/css/header-footer.css" />
+	<link rel="stylesheet" href="/static/css/iconfont.css" />
+	<link rel="stylesheet" href="/static/css/shopping-car.css" />
+	<script type="text/javascript" src="/static/js/jquery-1.12.4.min.js" ></script>
+	<script type="text/javascript" src="/static/js/index.js" ></script>
+	<script type="text/javascript" src="/static/js/shopping_car.js" ></script>
+{% endblock %}
+{% block wrap-left %}
+<div id="nav-wrap">
+</div>
+{% endblock %}
+
+{% block content %}
+<div id="all-content-wrap">
+		<div id="all-content" style="width: 990px">
+			<div id="car-con1">
+			<div id="shopping-bag"></div>
+				<div id="shopping-bag-right">
+					<div class="bag-right bag-right2">
+						<p style="font-size: 14px;margin-bottom: 15px;">查看购物袋</p>
+						<p>STEP 1</p>
+					</div>
+					<div class="bag-right bag-right1">
+						<p style="font-size: 14px;margin-bottom: 15px;">填写订单详情</p>
+						<p>STEP 2</p>
+					</div>
+					<div class="bag-right bag-right3">
+						<p style="font-size: 14px;margin-bottom: 15px;">订单确认</p>
+						<p>STEP 3</p>
+					</div>
+				</div>
+			</div>
+			 <form action="{%url 'orders:order_done' %}" method="post">
+        {% csrf_token %}
+        {% for sc in shopcar_list %}
+        <input type="hidden" name="sc" value="{{sc.id}}">
+        {% endfor %}
+		{% for address in shopcar_list.first.user.address_set.all %}
+			 {% if address.is_default %}
+			<div style="display: inline-block;width: 207px;font-size: 14px;height: 83px;padding: 11px 15px;background: url(/static/img/add1.png)">
+				{{address.province}}{{address.city}}({{address.recv_name}}收)<br>
+				{{address.area}}&nbsp;{{address.street}}&nbsp;{{address.desc}}&nbsp;{{address.recv_tel}}
+				<input id="{{address.id}}" type="radio" name="addr_id" value="{{address.id}}" checked>
+				<label for="{{address.id}}"></label>
+
+			</div>
+			 {% else %}
+
+			<div style="display: inline-block;width: 207px;font-size: 14px;height: 83px;padding: 11px 15px;background: url(/static/img/add1.png)">
+				{{address.province}}{{address.city}}({{address.recv_name}}收)<br>
+				{{address.area}}&nbsp;{{address.street}}&nbsp;{{address.desc}}&nbsp;{{address.recv_tel}}
+				<input id="{{address.id}}" type="radio" name="addr_id" value="{{address.id}}">
+        <label for="{{address.id}}"></label>
+			</div>
+			{% endif %}
+    {% empty %}
+    <div>当前您还没有添加收货地址,请<a href="{% url 'address:add_address' %}">添加收货地址</a></div>
+    {% endfor %}
+				 <br>
+				 <div style="float: right">
+					 <a style="font-size: 16px;color: #2aabd2" href="{% url 'address:add_address' %}">管理收货地址</a>
+				 </div>
+				 <br>
+			<div id="car-con2" style="margin-top: 20px;width: 960px">
+				<span style="margin-left: 10px;">宝贝</span>
+				<span style="margin-left: 150px;">单价</span>
+				<span style="margin-left: 85px;">数量</span>
+				<span style="margin-left: 70px;">实付款</span>
+				<span style="margin-left: 70px;">商品操作</span>
+				<span style="margin-left: 80px;">交易状态</span>
+				<span style="margin-left: 60px;">交易操作</span>
+			</div>
+			<div id="car-con3" style="width: 985px">
+				<div class="car-con3a" style="width: 980px">普通商品</div>
+					{% for shopcar in shopcar_list %}
+					<div class="car-con3b">
+						<div class="pic" style="margin-left: 20px"><img src="/{{shopcar.goods.goodsimage_set.all.first.path}}" alt=""></div>
+						<div class="con" style="width: 120px">
+							<p>{{shopcar.goods.name}}</p>
+							<p>{{store.name}}</p>
+						</div>
+						<div class="con2" style="margin-left: 5px">
+							<span style="color: #E5004F;margin-left: 20px">￥{{shopcar.goods.price}}</span>
+						</div>
+						<div class="num">
+							<span>{{shopcar.number}}</span>
+						</div>
+						<div class="num2" style="margin-left:45px;width: 70px">{{shopcar.allMoney}}元</div>
+						<div class="caozuo" style="margin-left: 45px">
+							<a href="javascript:;">移入收藏</a>
+							<a href="#">删除商品</a>
+						</div>
+						<div class="num2" style="margin-left:70px;width: 70px">
+							<span>未付款</span>
+						</div>
+						<div class="caozuo" style="margin-left: 30px">
+							<a href="javascript:;">移入收藏</a>
+							<a href="#">删除商品</a>
+						</div>
+					</div>
+					{% endfor %}
+			</div>
+				<div style="display: inline-block;margin-top: 20px;margin-left: 800px">
+					<a href="{% url 'shopcar:list_car'%}" style="border: none;color: #00b7ee;width: 100px;height: 40px" >返回购物车</a>
+				</div>
+				<div style="float: right;margin-top: 20px">
+					<input style="border: none;color: #fffffc;background-color: red;width: 100px;height: 40px" type="submit" value="结算订单">
+				</div>
+
+				 </form>
+		</div>
+	</div>
+
+
+{% endblock %}
+{% block ajax %}{% endblock %}

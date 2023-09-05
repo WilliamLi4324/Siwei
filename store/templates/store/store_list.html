@@ -1,0 +1,198 @@
+{% extends 'base.html' %}
+{% block title %}我的店铺{% endblock %}
+{% block banner %}{% endblock %}
+{% block floor-navs %}{% endblock %}
+{% block induction %}
+	<link rel="stylesheet" href="/static/js/lib/bootstrap-3.3.7-dist/css/bootstrap.css">
+	<link rel="stylesheet" href="/static/css/header-footer.css" />
+	<link rel="stylesheet" href="/static/css/sale_goods.css" />
+	<link rel="stylesheet" href="/static/css/iconfont.css" />
+	<script type="text/javascript" src="/static/js/jquery-1.12.4.min.js" ></script>
+	<script type="text/javascript" src="/static/js/index.js" ></script>
+	<script type="text/javascript" src="/static/js/sale_goods.js" ></script>
+	<!--倒计时插件用-->
+	<script src="http://libs.useso.com/js/jquery/1.11.0/jquery.min.js" 		type="text/javascript"></script>
+	<script>window.jQuery || document.write('<script src="/static/js/jquery-1.11.0.min.js"><\/script>')</script>
+	<script type="text/javascript" src="/static/js/jquery.countdown.min.js"></script>
+{% endblock %}
+{% block wrap-left %}{% endblock %}
+{% block content %}
+<div id="all-content-wrap">
+
+    <div id="goods-show-name">
+	<a href="/" style="font-size: 20px">首页</a>
+	<span style="font-size: 20px">></span>
+	<span style="font-size: 18px">当前位置></span><a href="javascript:;" style="font-size: 16px">查看自己所有店铺</a>
+</div>
+			<div id="all-content">
+				<div id="one-pic">
+					<a href="javascript:;"><img src="/static/img/sale-one-pic.jpg"></a>
+				</div>
+				<div id="one-list">
+					<div id="li-wrap"></div>
+					<a href="javascript:;" class="one-list1"></a>
+					<a href="javascript:;" class="one-list2"></a>
+					<a href="javascript:;" class="one-list3"></a>
+					<a href="javascript:;" class="one-list4"></a>
+					<a href="javascript:;" class="one-list5"></a>
+					<a href="javascript:;" class="one-list6"></a>
+					<a href="javascript:;" class="one-list7"></a>
+					<a href="javascript:;" class="one-list8"></a>
+					<a href="javascript:;" class="one-list9"></a>
+					<span class="last-li">| 畅销分类 |</span>
+				</div>
+                <br>
+                <br>
+				<div class="row author-article" style="width: 860px;height: 500px;margin-top: 10px;margin-left: 600px">
+    <div class="col-md-2" style="margin-left: -500px">
+        <ul style="font-size: 18px;font-weight: bold">
+            <li style="margin-top: 50px"><a href="{% url 'users:user_info' %}">个人资料</a></li>
+            <li style="margin-top: 15px"><a href="#">邮箱绑定</a></li>
+            <li style="margin-top: 15px">安全中心</li>
+            <li style="margin-top: 15px"><a href="{% url 'store:add_store' %}">免费开店</a></li>
+            <li style="margin-top: 15px"><a href="{% url 'store:list_store' %}">名下店铺</a></li>
+            <li style="margin-top: 15px"><a href="{% url 'orders:order_list' %}">个人订单</a></li>
+            <li style="margin-top: 15px"><a href="{% url 'address:list_address' %}">地址管理</a></li>
+            <li style="margin-top: 15px"><a href="{% url 'address:add_address' %}">添加收货地址</a></li>
+        </ul>
+    </div>
+
+<div class="col-md-10" style="margin-left: -400px">
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a  aria-controls="home" role="tab"
+                                                      data-toggle="tab" style="font-size: 16px;margin-top: -40px">旗下店铺</a></li>
+
+        </ul>
+    </div>
+		<div style="margin-left: -450px">
+            <div class="tab-content " style="margin-left: -500px;margin-top:40px">
+			<div style="margin-left:600px;border: 50px">
+				<span style="margin: 0 30px;font-size: 18px;font-weight: bold">店铺封面</span>
+				<span style="margin: 0 20px;font-size: 18px;font-weight: bold">店铺名称</span>
+				<span style="margin: 0 20px;font-size: 18px;font-weight: bold">店铺等级</span>
+				<span style="margin: 0 20px;font-size: 18px;font-weight: bold">描述店铺</span>
+				<span style="margin: 0 20px;font-size: 18px;font-weight: bold">信息更新</span>
+				<span style="margin: 0 20px;font-size: 18px;font-weight: bold">操作</span>
+			</div>
+
+			{% for store in stores %}
+			<div style="margin-left: 600px;margin-top: 20px">
+				<div style="float: left"><img class="img-circle" style="width: 120px;height: 120px" src="/{{store.cover}}" alt="店铺封面"></div>
+				<div style="float:left;height: 100px;line-height: 100px;font-size: 16px;margin-left: 30px ">{{store.name}}</div>
+				<div style="float:left;height: 100px;line-height: 100px;font-size: 16px;margin-left: 70px ">{{store.level}}</div>
+				<div style="float:left;height: 100px;line-height: 100px;font-size: 16px;margin-left: 50px ">{{store.intro}}</div>
+				<div style="float:left;height: 100px;line-height: 100px;font-size: 16px;margin-left: 10px;color: green"><a href="{% url 'store:update_store' store.id %}">修改信息</a></div>
+				<div style="float:left;height: 100px;line-height: 100px;font-size: 16px;margin-left: 30px;color: green"><a href="{% url 'store:detail_store' store.id %}">查看详情</a></div>
+			</div>
+			<br>
+			<div style="border-bottom: solid 1px #9d9d9d;margin-left: 600px;margin-top: 120px;width: 700px"></div>
+			{% empty %}
+		<th>
+			<td colspan="5">您还没有商铺呢,点击<a href="{% url 'store:add_store' %}">免费去开店</a></td>
+		</th>
+		{% endfor%}
+
+
+</div>
+        </div>
+
+    </div>
+		    </div>
+	    </div>
+
+
+
+
+
+
+
+{% endblock %}
+{% block footer%}
+<!--下面是公用   的  footer-->
+<div id="footer-wrap">
+    <div id="footer">
+        <ul id="after-sale" style="text-align: center">  <!--sale   出售   after-sale  售后-->
+            <li class="phone"
+                style="background: url(/static/img/footer-a.jpg) no-repeat 45px 25px;width: 290px;height: 80px">
+                <p>
+                    <span class="phone-num">400-119-1111</span>
+                    <span class="phone-time">8:00-24:00</span>
+                </p>
+                <p class="phone-email" style="margin-left: -30px">service@yintai.com</p>
+            </li>
+            <li class="sale-a"
+                style="background: url(/static/img/footer-b.jpg) no-repeat 50px 30px;width: 270px;height: 80px;">
+                <p><span style="color: #e5004f;margin-left: -30px">15天</span>无忧退货</p>
+                <span class="sale-b" style="margin-left: -30px">为您提供优质售后服务</span>
+            </li>
+            <li class="sale-a"
+                style="background:url(/static/img/footer-c.jpg) no-repeat 50px 30px;width: 270px;height: 80px">
+                <p><span style="color: #e5004f;margin-left: -30px">100%</span>正品保证</p>
+                <span class="sale-b" style="margin-left: -30px">品质护航 购物无忧</span>
+            </li>
+            <li class="sale-a"
+                style="background: url(/static/img/footer-d.jpg) no-repeat 45px 30px;width: 270px;height: 80px">
+                <p><span style="color: #e5004f;margin-left: -30px">满199</span>免运费</p>
+                <span class="sale-b" style="margin-left: -30px">为您提供优质物流</span>
+            </li>
+        </ul>
+
+        <div id="about-us">
+            <a href="javascript:;"> 关于银泰 </a> |
+            <a href="javascript:;"> 帮助中心 </a> |
+            <a href="javascript:;"> 退换货政策 </a> |
+            <a href="javascript:;"> 网站地图 </a> |
+            <a href="javascript:;"> 代理合作 </a> |
+            <a href="javascript:;"> 品牌招商 </a> |
+            <a href="javascript:;"> 商务合作 </a> |
+            <a href="javascript:;"> 网站联盟 </a> |
+            <a href="javascript:;"> 联系我们 </a> |
+            <a href="javascript:;"> 加入银泰 </a> |
+            <a href="javascript:;"> 版权声明 </a> |
+            <a href="javascript:;"> 法律声明 </a>
+        </div>
+
+        <div id="yintai-id" style="margin-top: 45px">
+            <p>浙ICP备10200233号京公网安备110105019085增值电信业务经营许可证：浙B2-20110005</p>
+            <p>Yintai © 2016, 银泰电子商务有限公司.</p>
+        </div>
+        <div id="footer-end" style="width: auto">
+            <a href="javascript:;" class="end1"><img src="/static/img/footer-end1.jpg"></a>
+            <a href="javascript:;" class="end2"><img src="/static/img/footer-end2.jpg"></a>
+            <a href="javascript:;" class="end3"><img src="/static/img/footer-end3.jpg"></a>
+        </div>
+
+    </div>
+</div>
+<!--上面是公用   的  footer-->
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

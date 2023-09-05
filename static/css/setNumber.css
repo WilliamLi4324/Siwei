@@ -1,0 +1,110 @@
+#set-logo-wrap{height: 136px;width: 100%;}
+#set-logo{width: 1190px;margin: 0 auto;height: 122px;padding-top: 34px;}
+.set-logo-pic{float: left;}
+
+#setNumber-sale{width: 660px;height: 90px;float: right;}
+#setNumber-sale .setNumber-sale-a{width: 120px;height: 61px;float: left;padding-left: 100px;padding-top: 27px;}
+.phone .phone-num{font-size: 16px;line-height: 16px;color:#e5004f;display: inline-block;margin-right: 10px;}
+.phone .phone-time{font-size: 10px;line-height: 14px;color: #666;}
+.phone .phone-email{font-size: 10px;line-height: 36px;color: #a38895;}
+.setNumber-sale-a p{font-size: 16px;line-height: 18px;color: #000;}
+.setNumber-sale-a .setNumber-sale-b{font-size: 12px;line-height: 26px;color: #888;}
+
+#setNumber-con{width: 1190px;height: 510px;background: #eee;padding-top: 60px;}
+#setNumber-left{float: left;margin-right: 90px;}
+#setNumber-right{float: left;width: 320px;height: 460px;background:#fff;}
+#setNumber-1{width: 320px;height: 44px;background: #e5004f;font:16px/44px '黑体';color:#fff;text-align: center;border-bottom: 1px solid #CCCCCC;}
+#setNumber-wrap{width: 280px;height: 415px;padding: 0 20px;position: relative;}
+#setNumber-2{float: right;line-height: 50px;}
+#setNumber-wrap .setNumber-3a{width: 270px;height: 38px;border: 1px solid #ccc;border-radius: 2px;font-size: 14px;outline-color: #E5004F;padding-left: 8px;}
+.setNumber-tishi{width: 270px;height: 22px;line-height:22px;color: #ccc;}
+#setNumber-wrap .setNumber-4a{width: 270px;height: 38px;border: 1px solid #ccc;border-radius: 2px;font-size: 14px;outline-color: #E5004F;padding-left: 8px;maxlength:"10";}
+#setNumber-wrap .setNumber-5a{width: 270px;height: 38px;border: 1px solid #ccc;border-radius: 2px;font-size: 14px;outline-color: #E5004F;padding-left: 8px;}
+#setNumber-wrap .setNumber-6a{width: 100px;height: 38px;border: 1px solid #ccc;border-radius: 2px;font-size: 14px;outline-color: #E5004F;padding-left: 8px;}
+#setNumber-wrap .setNumber-8a{width: 262px;height: 40px;padding-left: 8px;}
+#setNumber-wrap .setNumber-8a a{width: 270px;height: 40px;display: block;line-height: 40px;text-align: center;background: #E5004F;font-size: 16px;color: #fff;margin-top: 25px;border-radius:3px ;}
+#setNumber-ts{position: absolute;padding-top: 3px;top:155px;display: none;}
+#setNumber-ts span{display:block;float:left;margin-right:5px;line-height: 16px;text-align: center;}
+#setNumber-ts .mimaruo{width: 30px;height: 16px;background: #ccc;margin-right:2px;}
+#setNumber-ts .mimazhong{width: 30px;height: 16px;background: #ccc;margin-right:2px;}
+#setNumber-ts .mimaqiang{width: 30px;height: 16px;background: #ccc;}
+.set-yanzm-wrap{width: 150px;height: 38px;border: 1px solid #fff;position: absolute;left:150px;top:242px;}
+.set-yanzm{width:88px;height: 36px;line-height: 38px;display: block;float: left;margin-right: 10px;border: 1px solid #999;}
+.set-yanzm-wrap a{width: 48px;line-height: 36px;float: left;text-align: center;border: 1px solid #999;}
+
+/*---------------------         登录界面         -------------------------*/
+#setNumber-1 span{display: block;width: 50%;background: #fff;float: left;border-bottom: 1px solid #ccc;color: #666;}
+#setNumber-1 .log-number-a{background: #E5004F;color: #fff;}
+.setNumber-9a{width: 220px;height: 24px;margin-top:10px;background: url(../img/img/log-number-bottom.jpg)repeat-x;padding-left: 60px;}
+.setNumber-9a .setNumber-9aa{background: #fff;width: 160px;height: 24px;color: #ccc;}
+.setNumber-10a{padding-left: 15px;}
+.setNumber-10a li{float: left;padding: 0 5px;cursor: pointer;}
+.setNumber-10a span{float: left;}
+#logNumber-wrap2{width: 280px;height: 414px;padding: 0 20px;}
+#logNumber2-con{text-align: center;height: 50px;line-height: 50px;padding-top: 30px;}
+#logNumber-pic{width: 280px;height: 200px;position: relative;}
+#logNumber-pic .img1{position: absolute;top: 20px;left: 80px;}
+#logNumber-pic .img2{position: absolute;top: 0px;left: 145px;display: none;}
+#logNumber-con2{width: 210px;height: 30px;padding-left: 60px;}
+#logNumber-con2 span{display: block;float: left;margin: 0 5px;font-size: 14px;}
+#logNumber-con2 span a:hover{color: #E5004F;}
+#logNumber-con3{width: 200px;height: 20px;padding-left: 70px;}
+#logNumber-con3 p{display: block;width: 140px;height: 20px;line-height: 20px;border: 1px solid #E5004F;color: #E5004F;text-align: center;}
+.log-yanzm-wrap{width: 150px;height: 38px;border: 1px solid #fff;position: absolute;left: 150px;top:180px;}
+.log-yanzm{width:88px;height: 36px;line-height: 38px;display: block;float: left;margin-right: 10px;border: 1px solid #999;}
+.log-yanzm-wrap a{width: 48px;line-height: 36px;float: left;text-align: center;border: 1px solid #999;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

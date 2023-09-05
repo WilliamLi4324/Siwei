@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% block title %}查看订单详情{% endblock %}
+{% block floor-navs %}{% endblock %}
+{% block banner %}{% endblock %}
+{% block induction %}
+	<link rel="stylesheet" href="/static/css/header-footer.css" />
+	<link rel="stylesheet" href="/static/css/iconfont.css" />
+	<link rel="stylesheet" href="/static/css/shopping-car.css" />
+	<script type="text/javascript" src="/static/js/jquery-1.12.4.min.js" ></script>
+	<script type="text/javascript" src="/static/js/index.js" ></script>
+	<script type="text/javascript" src="/static/js/shopping_car.js" ></script>
+{% endblock %}
+{% block wrap-left %}
+<div id="nav-wrap">
+</div>
+{% endblock %}
+
+{% block content %}
+    <div id="all-content-wrap">
+		<div id="all-content">
+			<div id="car-con1">
+				<div id="shopping-bag"></div>
+				<div id="shopping-bag-right">
+					<div class="bag-right bag-right2">
+						<p style="font-size: 14px;margin-bottom: 15px;">查看购物袋</p>
+						<p>STEP 1</p>
+					</div>
+					<div class="bag-right bag-right3">
+						<p style="font-size: 14px;margin-bottom: 15px;">填写订单详情</p>
+						<p>STEP 2</p>
+					</div>
+                    <div style="font-size: 14px;margin-top:20px;margin-left: 480px">订单确认</div>
+					<div style="background: url(/static/img/step3.png)no-repeat;margin-left: 500px;
+					width: 18px;height: 18px;background-color: #fffffc">
+                    </div>
+                     <div style="margin-left: 480px">
+                            STEP 3
+                    </div>
+				</div>
+			</div>
+			<div id="car-con2">
+                <span style="margin-left: 10px;">订单信息</span>
+                <span style="margin-left: 160px;">商品</span>
+                <span style="margin-left: 60px;">单价</span>
+                <span style="margin-left: 60px;">数量</span>
+                <span style="margin-left: 100px;">总计</span>
+                <span style="margin-left: 160px;">状态</span>
+			</div>
+
+			<div id="car-con3">
+				{% for order_items in order.myorderitem_set.all %}
+					<div class="car-con3b" style="height: 100px">
+						<div class="con" style="height: 100px;">
+                            订单编号:{{order.id}}<br>
+                            下单时间:{{order.order_time|date:'Y-m-d G:i:s'}}<br>
+                             收货地址:{{order.address}}
+                        </div>
+                        <div class="pic" style="margin-left: 5px"><img src="/{{order_items.goods_image}}">
+                        </div><div style="float: left">{{order_items.goods_name}}</div>
+						<div class="con" style="margin-left: 30px;width: 110px">
+							{{order_items.goods_price}}
+						</div>
+						<div class="con" style="width: 110px">
+							{{order_items.goods_count}}
+						</div>
+						<div class="num" style="margin-left: 20px;">
+							{{order_items.goods_money}}
+						</div>
+						<div class="num2" style="margin-left:140px;width: 70px">已付款</div>
+					</div>
+                {% empty %}
+                {% endfor %}
+			</div>
+        </div>
+        </div>
+{% endblock %}
+{% block ajax %}{% endblock %}

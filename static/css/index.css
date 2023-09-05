@@ -1,0 +1,443 @@
+/*        banner  图       */
+
+#banner-wrap{width: 100%;height: 470px;position:relative}
+#banner{width: 1920px;margin-left: -960px;height: 470px;position:absolute;left: 50%;}
+
+#banner-pic1{width: 1542px;height: 470px;position: absolute;background: url(../img/banner-a1.jpg)no-repeat top left;padding-left: 377px;}
+
+#banner-pic2{width: 1542px;height: 470px;position: absolute;background: url(../img/banner-b1.jpg)no-repeat top left;padding-left: 377px;display: none;}
+
+#banner-pic3{width: 1542px;height: 470px;position: absolute;background: url(../img/img/banner-c1.jpg)no-repeat top left;padding-left: 377px;display: none;}
+
+#banner-pic4{width: 1542px;height: 470px;position: absolute;top:0;left:0;background: url(../img/img/banner-d1.jpg) no-repeat center ;padding-left: 377px;background-position: center 0;display: none;}
+
+#banner-left-btn{position: absolute;text-align:center; width: 30px;height: 60px;display: block;background: rgba(0,0,0,0.5);color: #FFFFFF;line-height: 60px;font-size: 18px;top:205px;left: 575px;display: none;}
+#banner-left-btn:hover{background: rgba(197,0,69,0.7);}
+
+#banner-right-btn{position: absolute;text-align:center; width: 30px;height: 60px;display: block;background: rgba(0,0,0,0.5);color: #FFFFFF;line-height: 60px;font-size: 18px;top:205px;left: 1325px;display: none;}
+#banner-right-btn:hover{background: rgba(197,0,69,0.7);}
+
+#banner-right-pic{position: absolute;top: 0;left: 1355px;display: block;width: 200px;height: 470px;background: red;}
+
+#banner-nav{position: absolute;width: 130px;height: 10px;left: 50%;margin-left: -65px;top: 440px;}
+#banner-nav a{display: block;width: 29px;height: 10px;background: #211616;float: left;margin-right:3px ;}
+#banner-nav .banner-nav1{background: #E5004F;}
+
+/*       上面是banner图区   样式           */
+
+/*      下面是主要内容区          */
+/*       下面热卖区   hot-goods-zone  */
+#hot-goods{width: 1190px;height: 355px;padding-top: 30px;}
+#hot-goods .hot-goods-left{float: left;width: 910px;height: 355px;}
+#hot-goods .hot-goods-right{float: right;width: 250px;height: 288px;padding-top: 42px;padding-left: 30px;}
+#hot-goods .hot-goods-nav li{width: 303px;height: 45px;border-bottom: 4px solid #333;float: left;font-size: 16px;line-height: 45px;text-align: center;cursor: pointer;}
+#hot-goods .hot-goods-nav .hot-goods-nav1{border-bottom: 4px solid #e5004f;font-weight: 900;background: url(../img/img/hot-goods-nav1.jpg) no-repeat 147px bottom;}
+
+#hot-goods .hot-goods-bottom{width: 910px;height: 280px;float: left;}
+#hot-goods .hot-goods-bottom .hot-goods-li1{display: block;}
+#hot-goods .hot-goods-bottom li{display: none;}
+#hot-goods .hot-goods-bottom li .hot-goods-a{float: left;border: 1px solid #ddd;margin:5px 5px 0 0 ;}
+
+#hot-goods .hot-goods-bottom li .hot-goods-b{float: left;border: 1px solid #ddd;margin:5px 5px 0 0 ;width: 220px;height: 260px;text-align: center;}
+#hot-goods .hot-goods-bottom li .hot-goods-b img{padding: 0 35px 5px;}
+#hot-goods .hot-goods-bottom li .hot-goods-b a:hover{color: #E92F4F;}
+
+#hot-goods .hot-goods-bottom li .hot-goods-c{float: left;border: 1px solid #ddd;margin:5px 5px 0 0 ;width: 220px;height: 260px;}
+/*       上面热卖区   hot-goods-zone  */
+
+/*   8.15   中秋图片     */
+#zhongqiu-pic{height: 80px;width: 1190px;}
+/*   8.15   中秋图片       都这样  简单多好。。。 */
+
+/*       下面是专柜同款商品       shoppe---专柜      */
+#shoppe-goods-name{height: 45px;width: 1190px;padding-top: 37px;border-bottom: 1px solid #ddd;}
+#shoppe-goods-name1{display: block;width: 350px;height: 36px;}
+
+#shoppe-goods{height: 575px;width: 1190px;border-bottom: 1px solid #ddd;}
+#shoppe-goods-left{float: left;width: 354px;height: 565px;padding: 10px 0 0 10px;}
+#shoppe-goods-right{float: left;width: 815px;height: 575px;}
+#shoppe-goods-right .shoppe-goods-nav{width: 815px;height: 38px;padding-top: 10px;}
+#shoppe-goods-right .shoppe-goods-nav li{text-align: center;font-size: 12px;line-height: 34px;border-bottom: 3px solid #333333;float: left;width: 100px;height: 34px;}
+#shoppe-goods-right .shoppe-goods-nav .shoppe-goods-nav1{background: url(../img/img/hot-goods-nav1.jpg)no-repeat 47px bottom ;border-bottom: 3px solid #e70050;font-weight: 900;}
+#shoppe-goods-kong{float: left;width: 615px;height: 34px;border-bottom: 3px solid #333333;}
+
+#shoppe-goods-right .shoppe-goods-pics{width: 812px;height: 522px;padding: 3px 0 0 3px;}
+#shoppe-goods-right .shoppe-goods-pics li{display: none;}
+#shoppe-goods-right .shoppe-goods-pics .shoppe-goods-picone{display: block;}
+#shoppe-goods-right .shoppe-goods-pics li .shoppe-goods-pic1aa{float: left;}
+#shoppe-goods-right .shoppe-goods-pics .shoppe-goods-pic1 a:hover{opacity: 0.7;}
+#shoppe-goods-right .shoppe-goods-pics .shoppe-goods-picone a:hover{opacity: 0.7;}
+
+.shoppe-goods-pic2a{width: 198px;height: 248px;float: left;border: 1px solid #ddd;margin-right: 3px;margin-bottom: 5px;position: relative;}
+.shoppe-border-top{position: absolute;top:0;left: 0;height: 1px;width: 0;background: #000;}
+.shoppe-border-left{position: absolute;top:0;left: 0;height: 0;width: 1px;background: #000;}
+.shoppe-border-right{position: absolute;bottom:0;right: 0;height: 0px;width: 1px;background: #000;}
+.shoppe-border-bottom{position: absolute;bottom:0;right: 0;height: 1px;width: 0;background: #000;}
+
+
+.shoppe-goods-pic2a-img{width: 150px;height: 200px;padding: 0 24px;}
+.shoppe-goods-pic2a-con{width: 180px;height: 43px;padding: 5px 10px 0 8px;}
+#shoppe-goods-right .shoppe-goods-pic2 .shoppe-goods-pic2a-con a{display: block;text-decoration: underline;}
+/*       上面是专柜同款商品       shoppe---专柜      */
+
+/*           下面开始楼层          第一层   */
+#floor-1L{width: 1190px;height: 455px;}
+#floor-1L .floor-1L-name{width: 1190px;height: 45px;padding-top: 37px;}
+#floor-1L-name1{width: 210px;height: 40px;line-height: 40px;font: 900 30px/40px '黑体';display: block;background:url(../img/img/floor-1L-name-pic.jpg)no-repeat right center}
+#floor-1L .floor-1L-con{width: 1190px;height: 370px;}
+
+#one-con-left{float: left;width: 219px;height: 352px;margin-right: 8px;border: 1px solid #ddd;padding: 16px 0 0 8px;}
+#one-left-names{width: 211px;height: 172px;border-bottom: 1px dashed #000;}
+#one-left-names a{display: block;float: left;border: 1px solid #ddd;width: 65px;height: 32px;line-height: 32px;text-align: center;margin-bottom: 3px;}
+#one-left-names .one-have-margin{margin:0 5px;}
+#one-left-names a:hover{background: #E5004F;color: #FFFFFF;}
+#one-left-pics{width: 200px;height: 140px;margin-left:6px ;position: relative;background:#eee;overflow: hidden;}
+#one-left-ul{position: absolute;width: 800px;left: -200px;}
+#one-left-ul li{width: 180px;height: 126px;padding-top: 14px;padding-left: 20px;float: left;}
+#one-left-ul li img{width: 75px; height: 50px;float: left;margin: 0 8px 8px 0;}
+#one-left-btn{position: absolute;display: block;height: 140px;width: 14px;line-height: 140px;top:0;left: 0;background:#eee;text-align: center;}
+#one-left-btn2{position: absolute;display: block;height: 140px;width: 14px;line-height: 140px;top:0;right: 0;background:#eee;text-align: center;}
+
+#one-con-center{float:left;width: 390px;height: 370px;border: 1px solid #ddd;margin-right: 5px;position: relative;overflow: hidden;}
+#one-center-btn{position: absolute;left: 0;top:155px;display: block;width: 30px;height: 60px;text-align: center;line-height: 60px;font-size: 20px;background: rgba(0,0,0,0.5);color: #fff;display: none;}
+#one-center-btn2{position: absolute;right: 0;top:155px;display: block;width: 30px;height: 60px;text-align: center;line-height: 60px;font-size: 20px;background: rgba(0,0,0,0.5);color: #fff;display: none;}
+#one-center-btn:hover{background: rgba(197,0,69,0.6);}
+#one-center-btn2:hover{background: rgba(197,0,69,0.6);}
+#one-center-pics{position: absolute;width: 780px;}
+#one-center-pics li{float: left;}
+#one-center-nav{position: absolute;bottom: 10px;left:165px;}
+#one-center-nav a{display: block;float: left;width: 16px;height: 16px;background: #2B2B29;border-radius: 50%;margin:0 5px;}
+#one-center-nav .one-center-nav1{background: #e6185f;}
+
+#one-con-right{float:left;width: 548px;height: 365px;border: 1px solid #ddd;padding:3px 0 0 4px;}
+#one-con-right .one-right-pic{display:block;float: left;width: 270px;height: 180px;position: relative;}
+.one-border-top{position: absolute;top:0;left: 0;height: 1px;width: 0;background: #000;}
+.one-border-left{position: absolute;top:0;left: 0;height: 0;width: 1px;background: #000;}
+.one-border-right{position: absolute;bottom:0;right: 0;height: 0px;width: 1px;background: #000;}
+.one-border-bottom{position: absolute;bottom:0;right: 0;height: 1px;width: 0;background: #000;}
+/*      上面是   第一层  楼         */
+
+
+/*           下面开始楼层          第2层   */
+#floor-2L{width: 1190px;height: 455px;}
+#floor-2L .floor-2L-name{width: 1190px;height: 45px;padding-top: 37px;}
+#floor-2L-name1{width: 210px;height: 40px;line-height: 40px;font: 900 30px/40px '黑体';display: block;background:url(../img/img/floor-1L-name-pic.jpg)no-repeat right center}
+#floor-2L .floor-2L-con{width: 1190px;height: 370px;}
+
+#two-con-left{float: left;width: 219px;height: 352px;margin-right: 8px;border: 1px solid #ddd;padding: 16px 0 0 8px;}
+#two-left-names{width: 211px;height: 172px;border-bottom: 1px dashed #000;}
+#two-left-names a{display: block;float: left;border: 1px solid #ddd;width: 65px;height: 32px;line-height: 32px;text-align: center;margin-bottom: 3px;}
+#two-left-names .two-have-margin{margin:0 5px;}
+#two-left-names a:hover{background: #E5004F;color: #FFFFFF;}
+#two-left-pics{width: 200px;height: 140px;margin-left:6px ;position: relative;background:#eee;overflow: hidden;}
+#two-left-ul{position: absolute;width: 800px;left: -200px;}
+#two-left-ul li{width: 180px;height: 126px;padding-top: 14px;padding-left: 20px;float: left;}
+#two-left-ul li img{width: 75px; height: 50px;float: left;margin: 0 8px 8px 0;}
+#two-left-btn{position: absolute;display: block;height: 140px;width: 14px;line-height: 140px;top:0;left: 0;background:#eee;text-align: center;}
+#two-left-btn2{position: absolute;display: block;height: 140px;width: 14px;line-height: 140px;top:0;right: 0;background:#eee;text-align: center;}
+
+#two-con-center{float:left;width: 390px;height: 370px;border: 1px solid #ddd;margin-right: 5px;position: relative;overflow: hidden;}
+#two-center-btn{position: absolute;left: 0;top:155px;display: block;width: 30px;height: 60px;text-align: center;line-height: 60px;font-size: 20px;background: rgba(0,0,0,0.5);color: #fff;display: none;}
+#two-center-btn2{position: absolute;right: 0;top:155px;display: block;width: 30px;height: 60px;text-align: center;line-height: 60px;font-size: 20px;background: rgba(0,0,0,0.5);color: #fff;display: none;}
+#two-center-btn:hover{background: rgba(197,0,69,0.6);}
+#two-center-btn2:hover{background: rgba(197,0,69,0.6);}
+#two-center-pics{position: absolute;width: 780px;}
+#two-center-pics li{float: left;}
+#two-center-nav{position: absolute;bottom: 10px;left:165px;}
+#two-center-nav a{display: block;float: left;width: 16px;height: 16px;background: #2B2B29;border-radius: 50%;margin:0 5px;}
+#two-center-nav .two-center-nav1{background: #e6185f;}
+
+
+#two-con-right{float:left;width: 548px;height: 365px;border: 1px solid #ddd;padding:3px 0 0 4px;}
+#two-con-right .two-right-pic{display:block;float: left;width: 270px;height: 180px;position: relative;}
+.two-border-top{position: absolute;top:0;left: 0;height: 1px;width: 0;background: #000;}
+.two-border-left{position: absolute;top:0;left: 0;height: 0;width: 1px;background: #000;}
+.two-border-right{position: absolute;bottom:0;right: 0;height: 0px;width: 1px;background: #000;}
+.two-border-bottom{position: absolute;bottom:0;right: 0;height: 1px;width: 0;background: #000;}
+/*           上面是楼层          第2层   */
+
+/*           下面开始楼层          第3层   */
+#floor-3L{width: 1190px;height: 455px;}
+#floor-3L .floor-3L-name{width: 1190px;height: 45px;padding-top: 37px;}
+#floor-3L-name1{width: 210px;height: 40px;line-height: 40px;font: 900 30px/40px '黑体';display: block;background:url(../img/img/floor-1L-name-pic.jpg)no-repeat right center}
+#floor-3L .floor-3L-con{width: 1190px;height: 370px;}
+
+#three-con-left{float: left;width: 219px;height: 352px;margin-right: 8px;border: 1px solid #ddd;padding: 16px 0 0 8px;}
+#three-left-names{width: 211px;height: 172px;border-bottom: 1px dashed #000;}
+#three-left-names a{display: block;float: left;border: 1px solid #ddd;width: 65px;height: 32px;line-height: 32px;text-align: center;margin-bottom: 3px;}
+#three-left-names .three-have-margin{margin:0 5px;}
+#three-left-names a:hover{background: #E5004F;color: #FFFFFF;}
+#three-left-pics{width: 200px;height: 140px;margin-left:6px ;position: relative;background:#eee;overflow: hidden;}
+#three-left-ul{position: absolute;width: 800px;left: -200px;}
+#three-left-ul li{width: 180px;height: 126px;padding-top: 14px;padding-left: 20px;float: left;}
+#three-left-ul li img{width: 75px; height: 50px;float: left;margin: 0 8px 8px 0;}
+#three-left-btn{position: absolute;display: block;height: 140px;width: 14px;line-height: 140px;top:0;left: 0;background:#eee;text-align: center;}
+#three-left-btn2{position: absolute;display: block;height: 140px;width: 14px;line-height: 140px;top:0;right: 0;background:#eee;text-align: center;}
+
+#three-con-center{float:left;width: 390px;height: 370px;border: 1px solid #ddd;margin-right: 5px;position: relative;overflow: hidden;}
+#three-center-btn{position: absolute;left: 0;top:155px;display: block;width: 30px;height: 60px;text-align: center;line-height: 60px;font-size: 20px;background: rgba(0,0,0,0.5);color: #fff;display: none;}
+#three-center-btn2{position: absolute;right: 0;top:155px;display: block;width: 30px;height: 60px;text-align: center;line-height: 60px;font-size: 20px;background: rgba(0,0,0,0.5);color: #fff;display: none;}
+#three-center-btn:hover{background: rgba(197,0,69,0.6);}
+#three-center-btn2:hover{background: rgba(197,0,69,0.6);}
+#three-center-pics{position: absolute;width: 780px;}
+#three-center-pics li{float: left;}
+#three-center-nav{position: absolute;bottom: 10px;left:165px;}
+#three-center-nav a{display: block;float: left;width: 16px;height: 16px;background: #2B2B29;border-radius: 50%;margin:0 5px;}
+#three-center-nav .three-center-nav1{background: #e6185f;}
+
+
+#three-con-right{float:left;width: 548px;height: 365px;border: 1px solid #ddd;padding:3px 0 0 4px;}
+#three-con-right .three-right-pic{display:block;float: left;width: 270px;height: 180px;position: relative;}
+.three-border-top{position: absolute;top:0;left: 0;height: 1px;width: 0;background: #000;}
+.three-border-left{position: absolute;top:0;left: 0;height: 0;width: 1px;background: #000;}
+.three-border-right{position: absolute;bottom:0;right: 0;height: 0px;width: 1px;background: #000;}
+.three-border-bottom{position: absolute;bottom:0;right: 0;height: 1px;width: 0;background: #000;}
+/*        上面是楼层  第三楼           */
+
+/*           下面开始楼层          第4层   时尚鞋靴 */
+#floor-4L{width: 1190px;height: 455px;}
+#floor-4L .floor-4L-name{width: 1190px;height: 45px;padding-top: 37px;}
+#floor-4L-name1{width: 210px;height: 40px;line-height: 40px;font: 900 30px/40px '黑体';display: block;background:url(../img/img/floor-1L-name-pic.jpg)no-repeat right center}
+#floor-4L .floor-4L-con{width: 1190px;height: 370px;}
+
+#four-con-left{float: left;width: 219px;height: 352px;margin-right: 8px;border: 1px solid #ddd;padding: 16px 0 0 8px;}
+#four-left-names{width: 211px;height: 172px;border-bottom: 1px dashed #000;}
+#four-left-names a{display: block;float: left;border: 1px solid #ddd;width: 65px;height: 32px;line-height: 32px;text-align: center;margin-bottom: 3px;}
+#four-left-names .four-have-margin{margin:0 5px;}
+#four-left-names a:hover{background: #E5004F;color: #FFFFFF;}
+#four-left-pics{width: 200px;height: 140px;margin-left:6px ;position: relative;background:#eee;overflow: hidden;}
+#four-left-ul{position: absolute;width: 800px;left: -200px;}
+#four-left-ul li{width: 180px;height: 126px;padding-top: 14px;padding-left: 20px;float: left;}
+#four-left-ul li img{width: 75px; height: 50px;float: left;margin: 0 8px 8px 0;}
+#four-left-btn{position: absolute;display: block;height: 140px;width: 14px;line-height: 140px;top:0;left: 0;background:#eee;text-align: center;}
+#four-left-btn2{position: absolute;display: block;height: 140px;width: 14px;line-height: 140px;top:0;right: 0;background:#eee;text-align: center;}
+
+#four-con-center{float:left;width: 390px;height: 370px;border: 1px solid #ddd;margin-right: 5px;position: relative;overflow: hidden;}
+#four-center-btn{position: absolute;left: 0;top:155px;display: block;width: 30px;height: 60px;text-align: center;line-height: 60px;font-size: 20px;background: rgba(0,0,0,0.5);color: #fff;display: none;}
+#four-center-btn2{position: absolute;right: 0;top:155px;display: block;width: 30px;height: 60px;text-align: center;line-height: 60px;font-size: 20px;background: rgba(0,0,0,0.5);color: #fff;display: none;}
+#four-center-btn:hover{background: rgba(197,0,69,0.6);}
+#four-center-btn2:hover{background: rgba(197,0,69,0.6);}
+#four-center-pics{position: absolute;width: 780px;}
+#four-center-pics li{float: left;}
+#four-center-nav{position: absolute;bottom: 10px;left:165px;}
+#four-center-nav a{display: block;float: left;width: 16px;height: 16px;background: #2B2B29;border-radius: 50%;margin:0 5px;}
+#four-center-nav .four-center-nav1{background: #e6185f;}
+
+
+#four-con-right{float:left;width: 548px;height: 365px;border: 1px solid #ddd;padding:3px 0 0 4px;}
+#four-con-right .four-right-pic{display:block;float: left;width: 270px;height: 180px;position: relative;}
+.four-border-top{position: absolute;top:0;left: 0;height: 1px;width: 0;background: #000;}
+.four-border-left{position: absolute;top:0;left: 0;height: 0;width: 1px;background: #000;}
+.four-border-right{position: absolute;bottom:0;right: 0;height: 0px;width: 1px;background: #000;}
+.four-border-bottom{position: absolute;bottom:0;right: 0;height: 1px;width: 0;background: #000;}
+/*        上面是楼层  第四楼   时尚鞋靴          */
+
+
+/*           下面开始楼层          第5层   箱包 */
+#floor-5L{width: 1190px;height: 455px;}
+#floor-5L .floor-5L-name{width: 1190px;height: 45px;padding-top: 37px;}
+#floor-5L-name1{width: 210px;height: 40px;line-height: 40px;font: 900 30px/40px '黑体';display: block;background:url(../img/img/floor-1L-name-pic.jpg)no-repeat right center}
+#floor-5L .floor-5L-con{width: 1190px;height: 370px;}
+
+#five-con-left{float: left;width: 219px;height: 352px;margin-right: 8px;border: 1px solid #ddd;padding: 16px 0 0 8px;}
+#five-left-names{width: 211px;height: 172px;border-bottom: 1px dashed #000;}
+#five-left-names a{display: block;float: left;border: 1px solid #ddd;width: 65px;height: 32px;line-height: 32px;text-align: center;margin-bottom: 3px;}
+#five-left-names .five-have-margin{margin:0 5px;}
+#five-left-names a:hover{background: #E5004F;color: #FFFFFF;}
+#five-left-pics{width: 200px;height: 140px;margin-left:6px ;position: relative;background:#eee;overflow: hidden;}
+#five-left-ul{position: absolute;width: 800px;left: -200px;}
+#five-left-ul li{width: 180px;height: 126px;padding-top: 14px;padding-left: 20px;float: left;}
+#five-left-ul li img{width: 75px; height: 50px;float: left;margin: 0 8px 8px 0;}
+#five-left-btn{position: absolute;display: block;height: 140px;width: 14px;line-height: 140px;top:0;left: 0;background:#eee;text-align: center;}
+#five-left-btn2{position: absolute;display: block;height: 140px;width: 14px;line-height: 140px;top:0;right: 0;background:#eee;text-align: center;}
+
+#five-con-center{float:left;width: 390px;height: 370px;border: 1px solid #ddd;margin-right: 5px;position: relative;overflow: hidden;}
+#five-center-btn{position: absolute;left: 0;top:155px;display: block;width: 30px;height: 60px;text-align: center;line-height: 60px;font-size: 20px;background: rgba(0,0,0,0.5);color: #fff;display: none;}
+#five-center-btn2{position: absolute;right: 0;top:155px;display: block;width: 30px;height: 60px;text-align: center;line-height: 60px;font-size: 20px;background: rgba(0,0,0,0.5);color: #fff;display: none;}
+#five-center-btn:hover{background: rgba(197,0,69,0.6);}
+#five-center-btn2:hover{background: rgba(197,0,69,0.6);}
+#five-center-pics{position: absolute;width: 780px;}
+#five-center-pics li{float: left;}
+#five-center-nav{position: absolute;bottom: 10px;left:165px;}
+#five-center-nav a{display: block;float: left;width: 16px;height: 16px;background: #2B2B29;border-radius: 50%;margin:0 5px;}
+#five-center-nav .five-center-nav1{background: #e6185f;}
+
+
+#five-con-right{float:left;width: 548px;height: 365px;border: 1px solid #ddd;padding:3px 0 0 4px;}
+#five-con-right .five-right-pic{display:block;float: left;width: 270px;height: 180px;position: relative;}
+.five-border-top{position: absolute;top:0;left: 0;height: 1px;width: 0;background: #000;}
+.five-border-left{position: absolute;top:0;left: 0;height: 0;width: 1px;background: #000;}
+.five-border-right{position: absolute;bottom:0;right: 0;height: 0px;width: 1px;background: #000;}
+.five-border-bottom{position: absolute;bottom:0;right: 0;height: 1px;width: 0;background: #000;}
+/*        上面是楼层  第5楼   箱包          */
+
+
+/*           下面开始楼层          第6层   美妆 */
+#floor-6L{width: 1190px;height: 455px;}
+#floor-6L .floor-6L-name{width: 1190px;height: 45px;padding-top: 37px;}
+#floor-6L-name1{width: 210px;height: 40px;line-height: 40px;font: 900 30px/40px '黑体';display: block;background:url(../img/img/floor-1L-name-pic.jpg)no-repeat right center}
+#floor-6L .floor-6L-con{width: 1190px;height: 370px;}
+
+#six-con-left{float: left;width: 219px;height: 352px;margin-right: 8px;border: 1px solid #ddd;padding: 16px 0 0 8px;}
+#six-left-names{width: 211px;height: 172px;border-bottom: 1px dashed #000;}
+#six-left-names a{display: block;float: left;border: 1px solid #ddd;width: 65px;height: 32px;line-height: 32px;text-align: center;margin-bottom: 3px;}
+#six-left-names .six-have-margin{margin:0 5px;}
+#six-left-names a:hover{background: #E5004F;color: #FFFFFF;}
+#six-left-pics{width: 200px;height: 140px;margin-left:6px ;position: relative;background:#eee;overflow: hidden;}
+#six-left-ul{position: absolute;width: 800px;left: -200px;}
+#six-left-ul li{width: 180px;height: 126px;padding-top: 14px;padding-left: 20px;float: left;}
+#six-left-ul li img{width: 75px; height: 50px;float: left;margin: 0 8px 8px 0;}
+#six-left-btn{position: absolute;display: block;height: 140px;width: 14px;line-height: 140px;top:0;left: 0;background:#eee;text-align: center;}
+#six-left-btn2{position: absolute;display: block;height: 140px;width: 14px;line-height: 140px;top:0;right: 0;background:#eee;text-align: center;}
+
+#six-con-center{float:left;width: 390px;height: 370px;border: 1px solid #ddd;margin-right: 5px;position: relative;overflow: hidden;}
+#six-center-btn{position: absolute;left: 0;top:155px;display: block;width: 30px;height: 60px;text-align: center;line-height: 60px;font-size: 20px;background: rgba(0,0,0,0.5);color: #fff;display: none;}
+#six-center-btn2{position: absolute;right: 0;top:155px;display: block;width: 30px;height: 60px;text-align: center;line-height: 60px;font-size: 20px;background: rgba(0,0,0,0.5);color: #fff;display: none;}
+#six-center-btn:hover{background: rgba(197,0,69,0.6);}
+#six-center-btn2:hover{background: rgba(197,0,69,0.6);}
+#six-center-pics{position: absolute;width: 780px;}
+#six-center-pics li{float: left;}
+#six-center-nav{position: absolute;bottom: 10px;left:165px;}
+#six-center-nav a{display: block;float: left;width: 16px;height: 16px;background: #2B2B29;border-radius: 50%;margin:0 5px;}
+#six-center-nav .six-center-nav1{background: #e6185f;}
+
+
+#six-con-right{float:left;width: 548px;height: 365px;border: 1px solid #ddd;padding:3px 0 0 4px;}
+#six-con-right .six-right-pic{display:block;float: left;width: 270px;height: 180px;position: relative;}
+.six-border-top{position: absolute;top:0;left: 0;height: 1px;width: 0;background: #000;}
+.six-border-left{position: absolute;top:0;left: 0;height: 0;width: 1px;background: #000;}
+.six-border-right{position: absolute;bottom:0;right: 0;height: 0px;width: 1px;background: #000;}
+.six-border-bottom{position: absolute;bottom:0;right: 0;height: 1px;width: 0;background: #000;}
+/*        上面是楼层  第6楼   美妆          */
+
+/*           下面开始楼层          第7层   运动 */
+#floor-7L{width: 1190px;height: 455px;}
+#floor-7L .floor-7L-name{width: 1190px;height: 45px;padding-top: 37px;}
+#floor-7L-name1{width: 210px;height: 40px;line-height: 40px;font: 900 30px/40px '黑体';display: block;background:url(../img/img/floor-1L-name-pic.jpg)no-repeat right center}
+#floor-7L .floor-7L-con{width: 1190px;height: 370px;}
+
+#seven-con-left{float: left;width: 219px;height: 352px;margin-right: 8px;border: 1px solid #ddd;padding: 16px 0 0 8px;}
+#seven-left-names{width: 211px;height: 172px;border-bottom: 1px dashed #000;}
+#seven-left-names a{display: block;float: left;border: 1px solid #ddd;width: 65px;height: 32px;line-height: 32px;text-align: center;margin-bottom: 3px;}
+#seven-left-names .seven-have-margin{margin:0 5px;}
+#seven-left-names a:hover{background: #E5004F;color: #FFFFFF;}
+#seven-left-pics{width: 200px;height: 140px;margin-left:6px ;position: relative;background:#eee;overflow: hidden;}
+#seven-left-ul{position: absolute;width: 800px;left: -200px;}
+#seven-left-ul li{width: 180px;height: 126px;padding-top: 14px;padding-left: 20px;float: left;}
+#seven-left-ul li img{width: 75px; height: 50px;float: left;margin: 0 8px 8px 0;}
+#seven-left-btn{position: absolute;display: block;height: 140px;width: 14px;line-height: 140px;top:0;left: 0;background:#eee;text-align: center;}
+#seven-left-btn2{position: absolute;display: block;height: 140px;width: 14px;line-height: 140px;top:0;right: 0;background:#eee;text-align: center;}
+
+#seven-con-center{float:left;width: 390px;height: 370px;border: 1px solid #ddd;margin-right: 5px;position: relative;overflow: hidden;}
+#seven-center-btn{position: absolute;left: 0;top:155px;display: block;width: 30px;height: 60px;text-align: center;line-height: 60px;font-size: 20px;background: rgba(0,0,0,0.5);color: #fff;display: none;}
+#seven-center-btn2{position: absolute;right: 0;top:155px;display: block;width: 30px;height: 60px;text-align: center;line-height: 60px;font-size: 20px;background: rgba(0,0,0,0.5);color: #fff;display: none;}
+#seven-center-btn:hover{background: rgba(197,0,69,0.6);}
+#seven-center-btn2:hover{background: rgba(197,0,69,0.6);}
+#seven-center-pics{position: absolute;width: 780px;}
+#seven-center-pics li{float: left;}
+#seven-center-nav{position: absolute;bottom: 10px;left:165px;}
+#seven-center-nav a{display: block;float: left;width: 16px;height: 16px;background: #2B2B29;border-radius: 50%;margin:0 5px;}
+#seven-center-nav .seven-center-nav1{background: #e6185f;}
+
+
+#seven-con-right{float:left;width: 548px;height: 365px;border: 1px solid #ddd;padding:3px 0 0 4px;}
+#seven-con-right .seven-right-pic{display:block;float: left;width: 270px;height: 180px;position: relative;}
+.seven-border-top{position: absolute;top:0;left: 0;height: 1px;width: 0;background: #000;}
+.seven-border-left{position: absolute;top:0;left: 0;height: 0;width: 1px;background: #000;}
+.seven-border-right{position: absolute;bottom:0;right: 0;height: 0px;width: 1px;background: #000;}
+.seven-border-bottom{position: absolute;bottom:0;right: 0;height: 1px;width: 0;background: #000;}
+/*        上面是楼层  第7楼  运动户外          */
+
+/*           下面开始楼层          第8层   内衣配饰 */
+#floor-8L{width: 1190px;height: 455px;}
+#floor-8L .floor-8L-name{width: 1190px;height: 45px;padding-top: 37px;}
+#floor-8L-name1{width: 210px;height: 40px;line-height: 40px;font: 900 30px/40px '黑体';display: block;background:url(../img/img/floor-1L-name-pic.jpg)no-repeat right center}
+#floor-8L .floor-8L-con{width: 1190px;height: 370px;}
+
+#eight-con-left{float: left;width: 219px;height: 352px;margin-right: 8px;border: 1px solid #ddd;padding: 16px 0 0 8px;}
+#eight-left-names{width: 211px;height: 172px;border-bottom: 1px dashed #000;}
+#eight-left-names a{display: block;float: left;border: 1px solid #ddd;width: 65px;height: 32px;line-height: 32px;text-align: center;margin-bottom: 3px;}
+#eight-left-names .eight-have-margin{margin:0 5px;}
+#eight-left-names a:hover{background: #E5004F;color: #FFFFFF;}
+#eight-left-pics{width: 200px;height: 140px;margin-left:6px ;position: relative;background:#eee;overflow: hidden;}
+#eight-left-ul{position: absolute;width: 800px;left: -200px;}
+#eight-left-ul li{width: 180px;height: 126px;padding-top: 14px;padding-left: 20px;float: left;}
+#eight-left-ul li img{width: 75px; height: 50px;float: left;margin: 0 8px 8px 0;}
+#eight-left-btn{position: absolute;display: block;height: 140px;width: 14px;line-height: 140px;top:0;left: 0;background:#eee;text-align: center;}
+#eight-left-btn2{position: absolute;display: block;height: 140px;width: 14px;line-height: 140px;top:0;right: 0;background:#eee;text-align: center;}
+
+#eight-con-center{float:left;width: 390px;height: 370px;border: 1px solid #ddd;margin-right: 5px;position: relative;overflow: hidden;}
+#eight-center-btn{position: absolute;left: 0;top:155px;display: block;width: 30px;height: 60px;text-align: center;line-height: 60px;font-size: 20px;background: rgba(0,0,0,0.5);color: #fff;display: none;}
+#eight-center-btn2{position: absolute;right: 0;top:155px;display: block;width: 30px;height: 60px;text-align: center;line-height: 60px;font-size: 20px;background: rgba(0,0,0,0.5);color: #fff;display: none;}
+#eight-center-btn:hover{background: rgba(197,0,69,0.6);}
+#eight-center-btn2:hover{background: rgba(197,0,69,0.6);}
+#eight-center-pics{position: absolute;width: 780px;}
+#eight-center-pics li{float: left;}
+#eight-center-nav{position: absolute;bottom: 10px;left:165px;}
+#eight-center-nav a{display: block;float: left;width: 16px;height: 16px;background: #2B2B29;border-radius: 50%;margin:0 5px;}
+#eight-center-nav .eight-center-nav1{background: #e6185f;}
+
+
+#eight-con-right{float:left;width: 548px;height: 365px;border: 1px solid #ddd;padding:3px 0 0 4px;}
+#eight-con-right .eight-right-pic{display:block;float: left;width: 270px;height: 180px;position: relative;}
+.eight-border-top{position: absolute;top:0;left: 0;height: 1px;width: 0;background: #000;}
+.eight-border-left{position: absolute;top:0;left: 0;height: 0;width: 1px;background: #000;}
+.eight-border-right{position: absolute;bottom:0;right: 0;height: 0px;width: 1px;background: #000;}
+.eight-border-bottom{position: absolute;bottom:0;right: 0;height: 1px;width: 0;background: #000;}
+/*        上面是楼层  第8楼  内衣配饰          */
+
+
+/*           下面开始楼层          第9层   可爱婴童 */
+#floor-9L{width: 1190px;height: 455px;}
+#floor-9L .floor-9L-name{width: 1190px;height: 45px;padding-top: 37px;}
+#floor-9L-name1{width: 210px;height: 40px;line-height: 40px;font: 900 30px/40px '黑体';display: block;background:url(../img/img/floor-1L-name-pic.jpg)no-repeat right center}
+#floor-9L .floor-9L-con{width: 1190px;height: 370px;}
+
+#nine-con-left{float: left;width: 219px;height: 352px;margin-right: 8px;border: 1px solid #ddd;padding: 16px 0 0 8px;}
+#nine-left-names{width: 211px;height: 172px;border-bottom: 1px dashed #000;}
+#nine-left-names a{display: block;float: left;border: 1px solid #ddd;width: 65px;height: 32px;line-height: 32px;text-align: center;margin-bottom: 3px;}
+#nine-left-names .nine-have-margin{margin:0 5px;}
+#nine-left-names a:hover{background: #E5004F;color: #FFFFFF;}
+#nine-left-pics{width: 200px;height: 140px;margin-left:6px ;position: relative;background:#eee;overflow: hidden;}
+#nine-left-ul{position: absolute;width: 800px;left: -200px;}
+#nine-left-ul li{width: 180px;height: 126px;padding-top: 14px;padding-left: 20px;float: left;}
+#nine-left-ul li img{width: 75px; height: 50px;float: left;margin: 0 8px 8px 0;}
+#nine-left-btn{position: absolute;display: block;height: 140px;width: 14px;line-height: 140px;top:0;left: 0;background:#eee;text-align: center;}
+#nine-left-btn2{position: absolute;display: block;height: 140px;width: 14px;line-height: 140px;top:0;right: 0;background:#eee;text-align: center;}
+
+#nine-con-center{float:left;width: 390px;height: 370px;border: 1px solid #ddd;margin-right: 5px;position: relative;overflow: hidden;}
+#nine-center-btn{position: absolute;left: 0;top:155px;display: block;width: 30px;height: 60px;text-align: center;line-height: 60px;font-size: 20px;background: rgba(0,0,0,0.5);color: #fff;display: none;}
+#nine-center-btn2{position: absolute;right: 0;top:155px;display: block;width: 30px;height: 60px;text-align: center;line-height: 60px;font-size: 20px;background: rgba(0,0,0,0.5);color: #fff;display: none;}
+#nine-center-btn:hover{background: rgba(197,0,69,0.6);}
+#nine-center-btn2:hover{background: rgba(197,0,69,0.6);}
+#nine-center-pics{position: absolute;width: 780px;}
+#nine-center-pics li{float: left;}
+#nine-center-nav{position: absolute;bottom: 10px;left:165px;}
+#nine-center-nav a{display: block;float: left;width: 16px;height: 16px;background: #2B2B29;border-radius: 50%;margin:0 5px;}
+#nine-center-nav .nine-center-nav1{background: #e6185f;}
+
+
+#nine-con-right{float:left;width: 548px;height: 365px;border: 1px solid #ddd;padding:3px 0 0 4px;}
+#nine-con-right .nine-right-pic{display:block;float: left;width: 270px;height: 180px;position: relative;}
+.nine-border-top{position: absolute;top:0;left: 0;height: 1px;width: 0;background: #000;}
+.nine-border-left{position: absolute;top:0;left: 0;height: 0;width: 1px;background: #000;}
+.nine-border-right{position: absolute;bottom:0;right: 0;height: 0px;width: 1px;background: #000;}
+.nine-border-bottom{position: absolute;bottom:0;right: 0;height: 1px;width: 0;background: #000;}
+/*        上面是楼层  第9楼  可爱婴童          */
+/*   主要内容区    最后一截     */
+#content-end{width: 1185px;height: 170px;padding-top: 35px;padding-left: 5px;}
+#content-end a{width: 390px;height: 165px;display: block;float: left;border:1px solid #ddd;}
+#content-end a:hover{opacity: 0.7;}
+
+/*          楼层    导航*/
+#floor-navs{position: fixed;width: 50px;height: 550px;display:none;left:92%;z-index: 10;background:url(../img/img/floor_navs.png) no-repeat left top;}
+#floor-navs li{width: 50px;height: 50px;}
+.floor-navs-span{display: block;font-size: 12px;line-height: 24px;text-align: center;color: #fff;font-weight:900 ;background: #E5004F;width: 50px;height: 50px;display: none;}
+
+
+
+
+
+
+
+

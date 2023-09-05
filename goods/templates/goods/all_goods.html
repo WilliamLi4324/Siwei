@@ -1,0 +1,361 @@
+{% extends 'base.html' %}
+{% block title %}银泰网 - 特卖{% endblock %}
+{% block floor-navs %}{% endblock %}
+{% block banner %}{% endblock %}
+{% block induction %}
+	<link rel="stylesheet" href="/static/css/header-footer.css" />
+	<link rel="stylesheet" href="/static/css/sale_goods.css" />
+	<link rel="stylesheet" href="/static/css/iconfont.css" />
+	<script type="text/javascript" src="/static/js/jquery-1.12.4.min.js" ></script>
+	<script type="text/javascript" src="/static/js/index.js" ></script>
+	<script type="text/javascript" src="/static/js/sale_goods.js" ></script>
+	<!--倒计时插件用-->
+
+
+
+{% endblock %}
+{% block content %}
+		<div id="all-content-wrap">
+			<div id="all-content">
+				<div id="one-pic">
+					<a href="javascript:;"><img src="/static/img/sale-one-pic.jpg"></a>
+				</div>
+				<div id="one-list">
+					<div id="li-wrap"></div>
+					<a href="javascript:;" class="one-list1"></a>
+					<a href="javascript:;" class="one-list2"></a>
+					<a href="javascript:;" class="one-list3"></a>
+					<a href="javascript:;" class="one-list4"></a>
+					<a href="javascript:;" class="one-list5"></a>
+					<a href="javascript:;" class="one-list6"></a>
+					<a href="javascript:;" class="one-list7"></a>
+					<a href="javascript:;" class="one-list8"></a>
+					<a href="javascript:;" class="one-list9"></a>
+					<span class="last-li">| 畅销分类 |</span>
+				</div>
+				<div id="sale-zhutui">特卖主推</div>
+				<div id="sale-con-a">
+					<div class="con-a1">
+						<img src="/static/img/sale-con-a.jpg"/>
+						<div class="con-a1-w">
+							<div class="con-a1-left">
+								<p style="line-height: 25px;">卡迪乐休闲男装</p>
+								<p class="con-daojishi">距结束还有
+									<span class='dao-day' style="color: #E5004F;">2</span>天
+									<span class='dao-house' style="color:#E5004F;">2</span>时
+									<span class='dao-min' style="color: #E5004F;">2</span>分
+								</p>
+							</div>
+							<div class="con-a1-right">
+								1.1-1.5
+								<span style="font: 14px/55px '微软雅黑';">折</span>
+							</div>
+						</div>
+					</div>
+					<div class="con-a1" style="margin: 0 10px;">
+						<img src="/static/img/sale-con-a2.jpg"/>
+						<div class="con-a1-w">
+							<div class="con-a1-left">
+								<p style="line-height: 25px;">奈绮儿&雅贝嘉焕新出行 由此启程</p>
+								<p class="con-daojishi">距结束还有
+									<span class='dao-day' style="color: #E5004F;">2</span>天
+									<span class='dao-house' style="color:#E5004F;">2</span>时
+									<span class='dao-min' style="color: #E5004F;">2</span>分
+								</p>
+							</div>
+							<div class="con-a1-right">
+								2-2.5
+								<span style="font: 14px/55px '微软雅黑';">折</span>
+							</div>
+						</div>
+					</div>
+					<div class="con-a1">
+						<img src="/static/img/sale-con-a3.jpg"/>
+						<div class="con-a1-w">
+							<div class="con-a1-left">
+								<p style="line-height: 25px;">飞科&百特个护健康</p>
+								<p class="con-daojishi">距结束还有
+									<span class='dao-day' style="color: #E5004F;">2</span>天
+									<span class='dao-house' style="color:#E5004F;">2</span>时
+									<span class='dao-min' style="color: #E5004F;">2</span>分
+								</p>
+							</div>
+							<div class="con-a1-right">
+								0.5-7.2
+								<span style="font: 14px/55px '微软雅黑';">折</span>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				
+				<div id="sala-content">
+					<div id="content-left">
+						<div class="title">
+							<span style="font:900 22px/38px '微软雅黑'">
+								最新推荐
+							</span>
+							<span style="background:url(/static/img/con-daojishi.png)no-repeat -12px -153px;"></span>
+							<span style="font: 14px/38px '微软雅黑';">上新</span>
+							<a href="javascript:;">查看抢购所有商品</a>
+						</div>
+						
+						<div class="content-pics">
+							<div class="pics-left">
+								<div class="pics-bg"></div>
+								<p style="text-align:center;line-height:80px;color: #E5004F;display: block;margin-bottom: 30px;">
+									刊菲时尚女装
+								</p>
+								<p style="color:#E5004F;font:900 30px/34px '微软雅黑';text-align:center;">
+									2.3-3.8
+								</p>
+								<p style="color:#E5004F;text-align:center;display: block;margin-bottom: 14px;">
+									折
+								</p>
+								<div class="pic-dao">
+									<span>距结束还有</span>
+									<span class="pic-dao-day" style="color: #000;"></span>
+									<span>天</span>
+									<span class="pic-dao-house" style="color: #000;"></span>
+									<span>时</span>
+									<span class="pic-dao-min" style="color: #000;"></span>
+									<span>分</span>
+								</div>
+							</div>
+							<div class="pics-right">
+								<a href="javascript:;">
+									<img src="/static/img/sala-pic-right.jpg">
+								</a>
+							</div>
+						</div>
+						
+						<div class="content-pics">
+							<div class="pics-left">
+								<div class="pics-bg"></div>
+								<p style="text-align:center;line-height:80px;color: #E5004F;display: block;margin-bottom: 30px;">
+									刊菲时尚女装
+								</p>
+								<p style="color:#E5004F;font:900 30px/34px '微软雅黑';text-align:center;">
+									2.3-3.8
+								</p>
+								<p style="color:#E5004F;text-align:center;display: block;margin-bottom: 14px;">
+									折
+								</p>
+								<div class="pic-dao">
+									<span>距结束还有</span>
+									<span class="pic-dao-day" style="color: #000;"></span>
+									<span>天</span>
+									<span class="pic-dao-house" style="color: #000;"></span>
+									<span>时</span>
+									<span class="pic-dao-min" style="color: #000;"></span>
+									<span>分</span>
+								</div>
+							</div>
+							<div class="pics-right">
+								<a href="javascript:;">
+									<img src="/static/img/sala-pic-right2.jpg">
+								</a>
+							</div>
+						</div>
+						
+						<div class="content-pics">
+							<div class="pics-left">
+								<div class="pics-bg"></div>
+								<p style="text-align:center;line-height:80px;color: #E5004F;display: block;margin-bottom: 30px;">
+									刊菲时尚女装
+								</p>
+								<p style="color:#E5004F;font:900 30px/34px '微软雅黑';text-align:center;">
+									2.3-3.8
+								</p>
+								<p style="color:#E5004F;text-align:center;display: block;margin-bottom: 14px;">
+									折
+								</p>
+								<div class="pic-dao">
+									<span>距结束还有</span>
+									<span class="pic-dao-day" style="color: #000;"></span>
+									<span>天</span>
+									<span class="pic-dao-house" style="color: #000;"></span>
+									<span>时</span>
+									<span class="pic-dao-min" style="color: #000;"></span>
+									<span>分</span>
+								</div>
+							</div>
+							<div class="pics-right">
+								<a href="javascript:;">
+									<img src="/static/img/sala-pic-right3.jpg">
+								</a>
+							</div>
+						</div>
+						
+						<div class="content-pics">
+							<div class="pics-left">
+								<div class="pics-bg"></div>
+								<p style="text-align:center;line-height:80px;color: #E5004F;display: block;margin-bottom: 30px;">
+									刊菲时尚女装
+								</p>
+								<p style="color:#E5004F;font:900 30px/34px '微软雅黑';text-align:center;">
+									2.3-3.8
+								</p>
+								<p style="color:#E5004F;text-align:center;display: block;margin-bottom: 14px;">
+									折
+								</p>
+								<div class="pic-dao">
+									<span>距结束还有</span>
+									<span class="pic-dao-day" style="color: #000;"></span>
+									<span>天</span>
+									<span class="pic-dao-house" style="color: #000;"></span>
+									<span>时</span>
+									<span class="pic-dao-min" style="color: #000;"></span>
+									<span>分</span>
+								</div>
+							</div>
+							<div class="pics-right">
+								<a href="javascript:;">
+									<img src="/static/img/sala-pic-right4.jpg">
+								</a>
+							</div>
+						</div>
+						
+						<div class="content-pics">
+							<div class="pics-left">
+								<div class="pics-bg"></div>
+								<p style="text-align:center;line-height:80px;color: #E5004F;display: block;margin-bottom: 30px;">
+									刊菲时尚女装
+								</p>
+								<p style="color:#E5004F;font:900 30px/34px '微软雅黑';text-align:center;">
+									2.3-3.8
+								</p>
+								<p style="color:#E5004F;text-align:center;display: block;margin-bottom: 14px;">
+									折
+								</p>
+								<div class="pic-dao">
+									<span>距结束还有</span>
+									<span class="pic-dao-day" style="color: #000;"></span>
+									<span>天</span>
+									<span class="pic-dao-house" style="color: #000;"></span>
+									<span>时</span>
+									<span class="pic-dao-min" style="color: #000;"></span>
+									<span>分</span>
+								</div>
+							</div>
+							<div class="pics-right">
+								<a href="javascript:;">
+									<img src="/static/img/sala-pic-right5.jpg">
+								</a>
+							</div>
+						</div>
+						
+						
+						
+						
+					</div>
+					<div id="content-right">
+						<img src="/static/img/sale-end-pic.jpg">
+					</div>
+				</div>
+				
+				
+				
+				
+			</div>
+		</div>
+{% endblock %}
+{% block ajax %}
+		<!--上面是公用   的  footer-->
+	<script>
+			//关于搜索跨域
+	var searchKuayu     =document.getElementById('search-kuayu');//获取跨域表单
+	var searchBox		=document.getElementById('search-box');//获取input输入框
+	var searchBtn       =document.getElementById('search-btn');//获取input搜索框按钮
+	var searchKuaUl     =document.getElementById('search-kuayu-ul');//获取获得数据内容
+	//表单监听事件，
+	searchKuayu.oninput=searchKuayu.onpropertychange=function(){
+		var tet1=searchBox.value;
+		if (tet1!="") {
+			var oScript=document.createElement('script');
+			oScript.src='http://www.yintai.com/ajaxpage/autosearch.aspx?keyword='
+			+tet1+
+			'&callback=callback'
+			document.body.appendChild(oScript);
+			document.body.removeChild(oScript);
+		}else{
+			searchKuaUl.innerHTML='';//若输入为空则下面uls为空
+			searchKuaUl.style.display='none';
+		}	
+	}
+	//回调函数
+	function callback(odata){
+		console.log(odata)
+		searchKuaUl.innerHTML='';
+		searchKuaUl.style.display='block';
+		//建立li，
+		if(odata.length==0){
+			searchKuaUl.style.display='none';
+		}else{
+			for(var i=0;i<odata.length;i++){
+				var lis=document.createElement('li');
+				var lia=document.createElement('a');
+				lia.className='lia';
+				var text1=document.createTextNode(odata[i].keyword);
+				lia.appendChild(text1);
+				lis.appendChild(lia);
+				searchKuaUl.appendChild(lis);
+			}
+		}
+	}
+	//添加点击事件 li内容推入输入框并搜索
+	searchKuaUl.onclick=function(eve){  //属于委托事件
+		var e=window.event||eve;
+		var tar=e.target||e.srcElement;
+		if (tar.tagName.toLowerCase()=='a') {
+			searchBox.value=tar.innerHTML;
+			searchKuaUl.innerHTML='';
+			searchKuaUl.style.display='none';
+			var text=searchBox.value;
+			window.open('http://www.yintai.com/product/search.aspx?keyword='+text,'_blank');
+		};
+	}
+	searchBtn.onclick=function(){   //添加按钮搜索
+		var text2=searchBox.value;
+		if (text2!='') {
+			window.open('http://www.yintai.com/product/search.aspx?keyword='+text2,'_blank');
+			searchKuaUl.style.display='none';
+		};
+	}
+	
+		</script>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

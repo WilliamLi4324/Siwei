@@ -1,0 +1,72 @@
+#all-content-wrap{padding-top: 20px;background: #eee;}
+#all-content{background: #fff;width: 960px;padding-left: 20px;}
+#car-con1{width: 960px;height: 92px;padding-top: 18px;}
+#shopping-bag{width: 115px;height: 78px;background: url(../img/shopping-car-header.jpg)no-repeat top left;float: left;margin-right: 280px;}
+#shopping-bag-right{width: 545px;float: left;height: 78px;background: url(../img/shopping-car-header.jpg) no-repeat -160px 20px;}
+#shopping-bag-right .bag-right{width: 85px;height: 60px;float: left;text-align: center;padding-top: 18px;}
+#shopping-bag-right .bag-right1{background: url(../img/shopping-car-header.jpg)no-repeat -150px -34px;margin-right: 150px;color: #E5004F;}
+#shopping-bag-right .bag-right2{margin-right: 140px;}
+.goods-all-pri{color: #E5004F;font-size: 16px;}
+.end-pri{color: #E5004F;font-size: 16px;}
+.goods-pri{color: #E5004F;}
+
+
+
+
+#car-con2{width: 912px;height: 30px;background: #666;padding-left: 28px;}
+#car-con2 span{display:block;float:left;width:50px;font-weight:900;color: #fff;height: 30px;line-height:30px;;}
+#car-con3{width: 938px;border: 1px solid #ccc;}
+#car-con3 .car-con3a{width: 933px;height: 30px;line-height: 30px;background: #eee;color: #666;padding-left: 5px;font-weight: 900;}
+#car-con3 .car-con3b{width: 928px;height: 73px;background: #fff;padding-top: 14px;}
+#car-con3 .input{width: 40px;height: 57px;padding-left: 26px;padding-top: 15px;float: left;}
+#car-con3 .pic{width: 45px;height: 60px;border: 1px solid #ccc;float: left;}
+#car-con3 .pic img{width: 45px;height: 60px;}
+#car-con3 .con{float: left;width: 215px;height: 72px;padding-left: 15px;}
+#car-con3 .con2{float: left;width: 100px;height: 66px;padding-top: 6px;margin-left: 130px;}
+#car-con3 .con2 span{display: block;float: left;margin-right: 10px;}
+#car-con3 .con2 .span16{background:url(../img/shopping-bag-background.png) no-repeat -5px -177px;width: 50px;height: 18px;line-height: 18px;}
+#car-con3 .num{width: 74px;height: 66px;padding-top:6px;float: left;margin-left: 60px;}
+#car-con3 .num a{display: block;float: left;width: 20px;height: 20px;line-height: 20px;background: #eee;text-align: center;border: 1px solid #999;}
+#car-con3 .num span{display: block;float: left;width: 30px;height: 20px;line-height: 20px;text-align: center;border-top: 1px solid #999;border-bottom: 1px solid #999;}
+#car-con3 .num2{width: 30px;height: 66px;padding-top:6px;float: left;margin-left: 80px;}
+#car-con3 .caozuo{width: 74px;height: 72px;float: left;margin-left: 35px;background: url(../img/shopping-bag-background.png) no-repeat 0 -87px;}
+#car-con3 .caozuo a{display: block;padding-left: 15px;height: 30px;line-height: 30px;width: 80px;}
+#car-con3 .caozuo a:hover{color: #E5004F;}
+
+#car-con4{height: 150px;width: 898px;border: 1px solid #ccc;margin-top: 10px;background: #eee;padding: 0 20px;}
+#car-con4 .con4a{width: 898px;height: 60px;border-bottom: 1px solid #ccc;padding-top: 22px;}
+#car-con4 .input{width: 20px;height: 60px;padding-left: 5px;float: left;}
+#car-con4 .con4a-right{float: left;width: 540px;height: 60px;margin-left: 140px;}
+#car-con4 .con4a-right p{display: block;float: left;font-size: 14px;color: #666;}
+#car-con4 .con4a-right .right-p1{display: block;height: 20px;line-height: 20px;width: 270px;float: right;padding-left: 20px;font-size: 16px;background: url(../img/shopping-bag-background.png) no-repeat 0 -29px;margin-bottom: 10px;font-weight: 900;}
+#car-con4 .con4b{width: 348px;height:55px;padding-top: 10px;padding-left: 550px;}
+#car-con4 .con4b p{line-height: 38px;display: block;float: left;font-size: 14px;font-weight: 900;}
+#car-con4 .con4b a{display: block;float: left;height: 38px;margin-left: 20px;width: 140px;text-align: center;background: url(../img/shopping-submit.png) no-repeat 0 0;border-radius: 5px;}
+#car-con4 .con4b a:hover{background-position: -147px 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

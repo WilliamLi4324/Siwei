@@ -1,0 +1,175 @@
+{% extends 'base.html' %}
+{% block title %}银泰网 - 登录页面{% endblock %}
+{% block floor-navs %}{% endblock %}
+{% block banner %}{% endblock %}
+{% block wrap-left %}{% endblock %}
+{% block induction %}
+    <link rel="stylesheet" href="/static/css/header-footer.css"/>
+    <link rel="stylesheet" href="/static/css/index.css"/>
+    <link rel="stylesheet" href="/static/css/setNumber.css"/>
+    <link rel="stylesheet" media="screen" href="/static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/reset.css"/>
+    <script type="text/javascript" src="/static/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="/static/js/index.js"></script>
+    <script type="text/javascript" src="/static/js/log-number.js"></script>
+{% endblock %}
+{% block content %}
+<div id="all-content-wrap">
+    <div id="all-content">
+        <div id="setNumber-con">
+            <div id="setNumber-left">
+                <a href="javascript:;"><img src="/static/img/setNumber-left-pic.jpg"></a>
+            </div>
+            <div id="setNumber-right">
+                <div id="setNumber-1" style="position: relative;">
+                    <span class="log-number-a">银泰网登录</span>
+                    <span>APP扫二维码登录</span>
+                    <div style="position: absolute;top:-25px;left: 260px;">
+                        <img src="/static/img/log-number-pic.png">
+                    </div>
+                </div>
+                <div id="setNumber-wrap" class="setNumber-C">
+                    <div id='setNumber-2'>
+                        <p>去<a href="{% url 'users:register' %}" style="color: #00c4ff">注册</a>可
+                            <a href="{% url 'users:user_login' %}" style="color:#E5004F;">直接登录
+                            </a>
+                        </p>
+                    </div>
+                    <form action="{% url 'users:user_login' %}" method="post">
+                        {% csrf_token %}
+                        <input type="hidden" name="next" value="{{next_url}}">
+                        <br>
+
+                        <div class="login-center clearfix" style="font-size: 18px;text-align: center;color: red">{{msg}}</div>
+                        <div class="login-center clearfix">
+                            <div class="login-center-img" style="margin-top: 10px;margin-left: -20px;"><img src="/static/img/name.png"/></div>
+                            <div class="login-center-input" style="float: left">
+                                <input type="text" name="username" autocomplete="off"  class="setNumber-3a" placeholder="请输入您的用户名"
+                                       style="height: 40px;width: 240px;font-size: 14px" onfocus="this.placeholder=''"
+                                       onblur="this.placeholder='请输入您的用户名'"/>
+                                <div class="login-center-input-text setNumber-tishi setNumber-tishi1">用户名</div>
+                            </div>
+                        </div>
+                        <div class="login-center clearfix">
+                            <div class="login-center-img" style="margin-top: 10px;margin-left: -20px;"><img src="/static/img/password.png"/></div>
+                            <div class="login-center-input">
+                                <input type="password" name="password" value=""  class="setNumber-4a" placeholder="请输入您的密码"
+                                       style="height: 40px;width: 240px;font-size: 14px" onfocus="this.placeholder=''"
+                                       onblur="this.placeholder='请输入您的密码'"/>
+                                <div class="login-center-input-text setNumber-tishi setNumber-tishi2">密码</div>
+                            </div>
+                        </div>
+                        <div class="login-center clearfix" style="margin-top: 20px">
+                            <div class="login-center-img" style="margin-top: 10px;margin-left: -20px;"></div>
+                            <div class="login-center-input" style="text-align: center;width: 240px;">
+                                <!-- <input type="text" name="code" class="setNumber-4a" autocomplete="off" placeholder="请输入验证码"
+                                       style="height: 40px;width: 240px;font-size: 14px"/>
+                                <div class="login-center-input-text">验证码</div>
+                                <div style="margin-top: 10px;width: 120px;float: left"><a href="javascript:;" title="点击刷新" onclick="code()">
+                                    <img src="/users/code/" alt="验证码" id="code">
+                                </a></div> -->
+                                <!-- <div style="font-size: 14px;float: left;margin-top: 20px"><a href="javascript:;" title="点击刷新" onclick="code()">看不清/点击换一张</a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="setNumber-7a" style="margin-left:60px">
+                            <input type="checkbox" value="">
+                            <span>自动登录</span>
+                            <a style="color: #E5004F;">
+                                公众场合不建议自动登录
+                            </a>
+                            <br>
+                            <br>
+                            <a href="javascript:;" style="font-size: 16px;margin-left: 50px">忘记密码</a>
+                        </div>
+                        <br>
+                        <input class="login-button" type="submit" value="登录" style="border: solid 0;width: 80px;margin-top: -50px;margin-left:80px">
+                        <input class="login-button" type="reset" value="重置" style="border: solid 0;width: 80px;margin-top: -50px">
+                    </form>
+                    <br>
+                    <ul class="setNumber-10a" style="margin-left: 20px">
+                        <li>QQ</li>
+                        <span>|</span>
+                        <li>支付宝</li>
+                        <span>|</span>
+                        <li>微博</li>
+                        <span>|</span>
+                        <li>139邮箱</li>
+                        <span>|</span>
+                        <li>手机支付</li>
+                    </ul>
+                </div>
+
+                <div id="logNumber-wrap2" class="setNumber-C" style="display: none;">
+                    <div id="logNumber2-con">用银泰网APP 扫描二维码安全登录</div>
+                    <div id="logNumber-pic">
+                        <img class="img1" src="/static/img/qq1.png">
+                        <img class="img2" src="/static/img/log-number2-er1.png">
+                    </div>
+                    <div id="logNumber-con2">
+                        <span><a href="javascript:;">下载银泰APP</a></span>
+                        <span><a href="javascript:;">使用帮助</a></span>
+                    </div>
+                    <div id="logNumber-con3">
+                        <p>仅限4.1.1版本以上使用</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--上面是主要内容-->{% endblock %}
+<!--下面是公用   的  footer-->
+{% block ajax %}
+<script src="/static/js/particles.min.js"></script>
+<script src="/static/js/app.js"></script>
+<script type="text/javascript">
+    function hasClass(elem, cls) {
+        cls = cls || '';
+        if (cls.replace(/\s/g, '').length == 0) return false; //当cls没有参数时，返回false
+        return new RegExp(' ' + cls + ' ').test(' ' + elem.className + ' ');
+    }
+
+    function addClass(ele, cls) {
+        if (!hasClass(ele, cls)) {
+            ele.className = ele.className == '' ? cls : ele.className + ' ' + cls;
+        }
+    }
+
+    function removeClass(ele, cls) {
+        if (hasClass(ele, cls)) {
+            var newClass = ' ' + ele.className.replace(/[\t\r\n]/g, '') + ' ';
+            while (newClass.indexOf(' ' + cls + ' ') >= 0) {
+                newClass = newClass.replace(' ' + cls + ' ', ' ');
+            }
+            ele.className = newClass.replace(/^\s+|\s+$/g, '');
+        }
+    }
+
+    function code() {
+        img = document.getElementById("code");
+        img.src = "/users/code/?id=" + Math.random()
+    }
+
+    document.querySelector(".login-button").onclick = function () {
+        addClass(document.querySelector(".login"), "active");
+        setTimeout(function () {
+            addClass(document.querySelector(".sk-rotating-plane"), "active");
+            document.querySelector(".login").style.display = "none"
+        }, 800);
+        setTimeout(function () {
+            removeClass(document.querySelector(".login"), "active");
+            removeClass(document.querySelector(".sk-rotating-plane"), "active");
+            document.querySelector(".login").style.display = "block";
+            alert("登录成功")
+
+        }, 3000)
+    }
+</script>
+
+{% endblock %}

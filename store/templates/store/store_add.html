@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block title %}商家注册{% endblock %}
+{% block floor-navs %}{% endblock %}
+{% block banner %}{% endblock %}
+{% block wrap-left %}
+<div id="nav-wrap">
+</div>
+{% endblock %}
+{% block content %}
+    <div id="goods-show-name">
+        <a href="/" style="font-size: 20px">首页</a>
+        <span style="font-size: 20px">></span>
+        <span style="font-size: 18px">当前位置></span><a href="javascript:;" style="font-size: 16px">免费开店</a>
+    </div>
+    <div class="row author-article" style="width: 860px;height: 500px;margin-top: -15px;margin-left: 600px">
+    <div class="col-md-2">
+        <ul style="font-size: 18px;font-weight: bold">
+            <li style="margin-top: 50px"><a href="{% url 'users:user_info' %}">个人资料</a></li>
+            <li style="margin-top: 15px"><a href="#">邮箱绑定</a></li>
+            <li style="margin-top: 15px">安全中心</li>
+            <li style="margin-top: 15px"><a href="{% url 'store:add_store' %}">免费开店</a></li>
+            <li style="margin-top: 15px"><a href="{% url 'store:list_store' %}">名下店铺</a></li>
+            <li style="margin-top: 15px"><a href="{% url 'orders:order_list' %}">个人订单</a></li>
+            <li style="margin-top: 15px"><a href="{% url 'address:list_address' %}">地址管理</a></li>
+            <li style="margin-top: 15px"><a href="{% url 'address:add_address' %}">添加收货地址</a></li>
+        </ul>
+    </div>
+    <div class="col-md-10">
+        <div style="text-align: center;margin-top: -250px;margin-left: -150px" >
+       <form action="{% url 'store:add_store' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <span style="text-align: right;font-size: 16px">店铺名称:</span><input style="height: 25px" type="text" name="name" autocomplete="off"><br>
+            <br>
+            <br>
+        <span style="text-align: right;font-size: 16px;margin-left: -170px">店铺封面:</span>
+
+                    <p style="margin-left: 50px;margin-top: -40px">
+                        <a style="position:relative;top:30px;display: inline-block;text-decoration: none;text-align: center;color: #ffffff;width: 120px;line-height: 70px;background-color:#cccccc;border-radius:15px;font-size: 18px;margin-left: 20px;margin-top: -50px "
+                           href="javascript:;">点击上传<input style="position: absolute;opacity: 0;left: 0;top:10px;width: 120px"
+                                              name="cover" type="file"></a></p>
+            <br>
+            <br>
+            <br>
+        <span style="text-align: right;font-size: 16px;margin-left:50px">店铺描述:</span><textarea name="intro"  cols="30" rows="4" ></textarea><br>
+            <br>
+            <input type="submit" value="成为商家" style="border: none;width: 80px;height: 40px;background-color: red;color: #fffffc;border-radius: 5px">
+            <input type="reset" value="一键取消" style="border: none;width: 80px;height: 40px">
+    </form>
+    </div>
+    </div>
+    </div>
+
+{% endblock %}

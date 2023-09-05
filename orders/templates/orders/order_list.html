@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block title %}所有订单{% endblock %}
+{% block floor-navs %}{% endblock %}
+{% block banner %}{% endblock %}
+{% block induction %}
+	<link rel="stylesheet" href="/static/css/header-footer.css" />
+	<link rel="stylesheet" href="/static/css/iconfont.css" />
+	<link rel="stylesheet" href="/static/css/shopping-car.css" />
+	<script type="text/javascript" src="/static/js/jquery-1.12.4.min.js" ></script>
+	<script type="text/javascript" src="/static/js/index.js" ></script>
+	<script type="text/javascript" src="/static/js/shopping_car.js" ></script>
+{% endblock %}
+{% block wrap-left %}
+<div id="nav-wrap">
+</div>
+{% endblock %}
+{% block content %}
+<div id="goods-show-name">
+    <a href="/" style="font-size: 20px">首页</a>
+    <span style="font-size: 20px">></span>
+    <span style="font-size: 18px">当前位置></span><a href="javascript:;" style="font-size: 16px">个人订单</a>
+</div>
+    <div style="text-align: center;margin: auto" id="car-con2">
+                <span style="margin-left: 20px;">订单编号</span>
+                <span style="margin-left: 110px;">下单时间</span>
+                <span style="margin-left: 70px;">地址</span>
+                <span style="margin-left: 80px;">买家留言</span>
+                <span style="margin-left: 60px;">总计</span>
+                <span style="margin-left: 160px;">状态</span>
+			</div>
+    <div  id="car-con3" style="text-align: center;margin: auto;">
+                    {% for orders in all_order %}
+					<div class="car-con3b" style="height: 100px;border-bottom: solid 1px #9d9d9d">
+						<div class="con" style="height: 100px;width: 120px">
+                            {{orders.id}}<br>
+                        </div>
+						<div class="con" style="margin-left: 30px;width: 110px">
+							{{orders.order_time|date:'Y-m-d G:i:s'}}<br>
+						</div>
+						<div class="con" style="width: 110px">
+							{{orders.address}}
+						</div>
+                        <div class="con" style="width: 110px">
+							{{orders.message}}
+						</div>
+						<div class="num" style="margin-left: 20px;">
+							{{orders.total}}
+						</div>
+						<div class="num2" style="margin-left:140px;width: 70px">已付款</div>
+					</div>
+                {% empty %}
+                {% endfor %}
+			</div>
+
+{% endblock %}
+{% block ajax %}{% endblock %}

@@ -1,0 +1,171 @@
+{% extends 'base.html' %}
+{% block title %}银泰网 - 购物袋{% endblock %}
+{% block floor-navs %}{% endblock %}
+{% block banner %}{% endblock %}
+{% block induction %}
+	<link rel="stylesheet" href="/static/css/header-footer.css" />
+	<link rel="stylesheet" href="/static/css/iconfont.css" />
+	<link rel="stylesheet" href="/static/css/shopping-car.css" />
+	<script type="text/javascript" src="/static/js/jquery-1.12.4.min.js" ></script>
+	<script type="text/javascript" src="/static/js/index.js" ></script>
+
+
+
+{% endblock %}
+{% block wrap-left %}
+<div id="nav-wrap">
+</div>
+{% endblock %}
+{% block content %}
+	<div id="all-content-wrap">
+		<div id="all-content">
+			<div id="car-con1">
+				<div id="shopping-bag"></div>
+				<div id="shopping-bag-right">
+					<div class="bag-right bag-right1">
+						<p style="font-size: 14px;margin-bottom: 15px;">查看购物袋</p>
+						<p>STEP 1</p>
+					</div>
+					<div class="bag-right bag-right2">
+						<p style="font-size: 14px;margin-bottom: 15px;">填写订单详情</p>
+						<p>STEP 2</p>
+					</div>
+					<div class="bag-right bag-right3">
+						<p style="font-size: 14px;margin-bottom: 15px;">订单确认</p>
+						<p>STEP 3</p>
+					</div>
+				</div>
+			</div>
+			<div id="car-con2">
+				<div style="float: left;padding-top: 6px;"><input type="checkbox" name checked="checked"/></div>
+				<span>全选</span>
+				<span style="margin-left: 60px;">商品</span>
+				<span style="margin-left: 300px;">单价</span>
+				<span style="margin-left: 100px;">数量</span>
+				<span style="margin-left: 70px;">小计</span>
+				<span style="margin-left: 46px;">操作</span>
+			</div>
+			<form action="{% url 'orders:order_confirm'%}" method="post">
+				{% csrf_token %}
+			<div id="car-con3">
+				<div class="car-con3a">普通商品</div>
+					{% for s in shop_cars %}
+					<div class="car-con3b">
+						<div class="input">
+							<input type="checkbox" value="{{s.id}}" name="buy_goods_id"
+								   checked="checked">
+						</div>
+						<div class="pic"><img src="/{{s.goods.goodsimage_set.first.path}}"></div>
+						<div class="con">
+							<p>{{s.goods.name}}</p>
+							<p style="color: #6C95F5;">尺码:{{s.goods.goodSize}}</p>
+						</div>
+						<div class="con2">
+							<span style="color: #E5004F;margin-left: 20px">￥{{s.goods.price}}</span>
+						</div>
+						<div class="num" style="width: 80px">
+							<input type="button" name="minus" value="-" ><input type="text" name="amount" value="{{s.number}}" readonly id="shang" style="width: 30px"><input type="button" name="plus" value="+" >
+						</div>
+						<div class="num2" style="margin-left:60px;width: 70px">{{s.allMoney}}元</div>
+						<div class="caozuo" style="margin-left: 8px">
+							<a href="javascript:;">移入收藏</a>
+							<a href="{% url 'shopcar:del_car' s.id %}">删除商品</a>
+						</div>
+					</div>
+					{% endfor %}
+			</div>
+			<div id="car-con4">
+				<div class="con4a">
+					<div class="input">
+						<input type="checkbox" name="" checked="checked">
+					</div>
+					<span style="display: block;float: left;">
+						全选
+					</span>
+					{% for s in shop_cars %}
+					<a href="{% url 'shopcar:del_car' s.id %}" style="display: block;float: left;margin: 0 15px;">
+					{% endfor %}
+						删除选中的商品
+					</a>
+					<a href="/" style="display: block;float: left;">
+						继续购物
+					</a>
+
+				</div>
+				<div class="con4b">
+					<p>
+						<span>结算金额：¥</span>
+						<span style="color: #999;font-size: 12px;font-weight: 100;">
+							(包含运费)
+						</span>
+						<span class="end-pri"></span>
+					</p>
+
+
+					<div id="settleAccounts_warp">
+				<span class="load_skip" style=" display: none;">
+					<i style="display: inline-block;font-style: normal; vertical-align: middle;"><img src="/static/img/loading.gif"></i>
+					正在转向订单信息填写页面，请稍等...
+				</span>
+				<a class="payment" href="javascript:;" ><input type="submit" value="" style="background-image: url(/static/img/shopping-submit.png);width: 140px;height: 40px"></a>
+
+
+			</div>
+
+
+			</div>
+
+				</div>
+
+			</form>
+		</div>
+	</div>
+
+{% endblock %}
+
+{%block ajax%}
+<script>
+	$(function () {
+		//购物车 去结算按钮
+	$('.payment').on('click',function(){
+		$('.payment').css('display','none');
+		$('.load_skip').css('display','block');
+		setTimeout(function(){window.location="/orders/order_confirm";},1000);
+	});
+
+
+
+	//订单提交页面 提交订单按钮
+	$('.sub_btn').on('click',function(){
+		$('.sub_btn').css('display','none');
+		$('.load_sub').css('display','block');
+		setTimeout(function(){window.location="ordersucceed.html";},1000);
+	});
+    })
+
+
+</script>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
